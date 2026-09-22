@@ -633,6 +633,7 @@ header {
   position: relative;
   overflow: hidden;
   margin-bottom: 50px;
+  padding-left: 20px;
 }
 .populars__top{
   width: 100%;
@@ -698,6 +699,73 @@ header {
 
 
 
+/* Card styles */
+
+.card__wrapper{
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.card__wrap{
+  width: 100vw;
+  display: flex;
+  gap: 20px;
+}
+.card{
+  width: 278px !important;
+  height: 484px !important;
+  background: rgba(206, 206, 206, 0.193);
+  position: relative;
+}
+.card__img{
+  width: 100% !important;
+  height: 272px !important;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.card__info{
+  padding: 10px;
+  text-align: left;
+}
+.card__name{
+  font-size: 18px;
+  color: #00000073;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.card__info>.star{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  color: #000000d1;
+  margin-bottom: 10px;
+}
+.step__pay{
+  font-size: 16px;
+  background: #00000053;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card__bottom{
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.card__bottom>.add__to-cart{
+  padding: 5px;
+  border: 1px solid rgba(255, 174, 0, 0.489);
+  border-radius: 10px;
+}
+
 
 
 /* JS styles */
@@ -716,6 +784,9 @@ header {
   bottom: -10;
   color: #000;
   z-index: 6;
+}
+.selected{
+  background: rgba(255, 174, 0, 0.566);
 }
 
 @media (max-width: 1025px) {

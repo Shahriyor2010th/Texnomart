@@ -120,8 +120,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper (".catalogue", {
-  slidesPerGroup: 1,
-  slidesPerView: 3,
+  slidesPerView: 6.4,
   mousewheel:true,
 
   navigation: {
@@ -137,3 +136,59 @@ var swiper = new Swiper(".populars", {
     prevEl: ".swiper-button-prev",
   },
 })
+
+let cardWrap = document.querySelector(".card__wrap")
+
+import { products } from './datas.js';
+
+products.forEach((item, index)=>{
+  // let ind = index
+  
+  
+  let card = document.createElement("div")
+  let rating = ""
+  if (item.review == 0){
+    rating += `🩶 Sharq yo'q`
+  }
+  else{
+    rating +=`❤️ ${item.review} ta sharq`
+  }
+  card.innerHTML = `
+    <img src="./images/card__img${index}.webp" alt="" class="card__img">
+    <div class="card__info">
+    <h3 class="card__name">${item.name}</h3>
+    <span class="star">${rating}</span>
+    <p class="step__pay">${item.installment}</p>
+    <div class="card__bottom">
+      <span>${item.price}</span>
+      <button class="add__to-cart">🛒</button>
+    </div>
+    </div>
+  `
+  card.classList.add("card")
+  card.classList.add("swiper-slide")
+  cardWrap.append(card)
+
+})
+
+var swiper = new Swiper(".card__wrapper", {
+  slidesPerView:4.3,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+})
+
+
+let addCart = document.querySelectorAll(".add__to-cart")
+
+console.log(addCart);
+
+// addCart.onclick =  ()=>{
+//   if (addCart.textContent == "🛒"){
+//     addCart.textContent = "✅"
+//   }
+//   else if (addCart.textContent == "✅"){
+//     addCart.textContent = "🛒"
+//   }
+// }
