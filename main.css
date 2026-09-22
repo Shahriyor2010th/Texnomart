@@ -1,0 +1,919 @@
+/* inter-100 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./fonts/inter-v20-latin-100.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-100italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100;
+  src: url("./fonts/inter-v20-latin-100italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-200 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/inter-v20-latin-200.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-200italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 200;
+  src: url("./fonts/inter-v20-latin-200italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/inter-v20-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-300italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 300;
+  src: url("./fonts/inter-v20-latin-300italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/inter-v20-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/inter-v20-latin-italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/inter-v20-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  src: url("./fonts/inter-v20-latin-500italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/inter-v20-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  src: url("./fonts/inter-v20-latin-600italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/inter-v20-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./fonts/inter-v20-latin-700italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/inter-v20-latin-800.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 800;
+  src: url("./fonts/inter-v20-latin-800italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/inter-v20-latin-900.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-900italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 900;
+  src: url("./fonts/inter-v20-latin-900italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: "Inter";
+}
+a {
+  text-decoration: none;
+}
+select,
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+main {
+  padding-top: 150px;
+}
+ul,
+li {
+  list-style: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+/* Login */
+
+.login__bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000046;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  padding-top: 70px;
+  border-radius: 10px;
+  width: 420px;
+}
+.login__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-inline: 30px;
+}
+.login__btn {
+  background: rgb(255, 174, 0);
+  width: 90%;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.close__login {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  border: 2px solid #a5a5a58f;
+}
+.login__phone {
+  border: 1px solid #000;
+  width: 90%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.login__phone::placeholder {
+  font-size: 16px;
+}
+.login__name {
+  border: 1px solid #000;
+  width: 90%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.login__name::placeholder {
+  font-size: 16px;
+}
+.login__type {
+  color: rgba(0, 0, 255, 0.74);
+}
+.login > button {
+  cursor: pointer;
+}
+.login__login {
+  border: 1px solid #000;
+  width: 90%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.login__login::placeholder {
+  font-size: 16px;
+}
+.login__type2 {
+  color: rgba(0, 0, 255, 0.74);
+}
+
+/* header style */
+
+header {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__topM1 {
+  display: none;
+}
+.header__topbg {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.89);
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+.header-top {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top > .left {
+  display: flex;
+  gap: 50px;
+}
+.header-top > .left > .location {
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+}
+.location > .cities-list {
+  position: absolute;
+  z-index: 5;
+  background-color: #ffffff;
+  color: #000;
+  padding: 10px;
+  border: 2px solid #ce7c02;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.choosing__city {
+  font-size: 16px;
+  margin-top: 5px;
+}
+.listbox {
+  display: flex;
+  margin-top: 20px;
+}
+.listbox > ul > li {
+  padding: 5px;
+}
+.listbox > ul > li:hover {
+  background-color: rgba(255, 174, 0, 0.5);
+  border-radius: 5px;
+}
+.header-linkbox {
+  display: flex;
+  gap: 20px;
+}
+.header-linkbox > a {
+  color: #fff;
+  font-size: 14px;
+}
+.header-top > .right {
+  display: flex;
+  gap: 50px;
+}
+.header-top > .right > p {
+  font-size: 14px;
+  color: #fff;
+}
+.selectbox-header {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 2px 5px;
+  border-radius: 20px;
+}
+.selectbox-header > select {
+  color: #fff;
+}
+.selectbox-header > select > option {
+  color: #000;
+}
+.header__bottombg {
+  background-color: #00000017;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.header-bottom {
+  width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+.header__b-logo > a {
+  font-size: 30px;
+  font-weight: 900;
+  color: #000;
+}
+.header__catalog {
+  background-color: rgb(255, 174, 0);
+  padding: 8px 10px;
+  font-size: 16px;
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+}
+.header__search {
+  background-color: rgb(255, 174, 0);
+  width: 707px;
+  padding: 3px;
+  border-radius: 5px;
+}
+.header__search > input {
+  width: 93%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.header__search > button {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.header__buttonbox {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header__buttonbox > li > button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  font-size: 16px;
+}
+.header__buttonbox > li > button > i {
+  font-size: 22px;
+}
+.header__buttonbox > li > button > a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #000;
+  align-items: center;
+  font-size: 16px;
+}
+.header__buttonbox > li > button > a > i {
+  font-size: 22px;
+}
+.bottom__nav {
+  display: none;
+}
+.header__topM2 {
+  display: none;
+}
+.header__bottomM1 {
+  display: none;
+}
+.bottom__heart {
+  color: #ffffffb9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* Shopping cart style */
+
+.cart__bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #42424267;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart {
+  width: 1000px;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  padding: 100px;
+  padding-top: 20px;
+}
+.cart__close {
+  width: 35px;
+  height: 35px;
+}
+.cart__top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart__title {
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+.cart__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+.cart__content > .fa-solid {
+  color: #00000069;
+  font-size: 50px;
+}
+.cart__content > p {
+  text-align: center;
+  font-size: 20px;
+}
+.cart__content > a {
+  color: #000;
+  border: 1px solid rgb(255, 174, 0);
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+/* Swiper styles */
+
+.swiper {
+  width: 1200px;
+  height: 355px;
+  border-radius: 20px;
+}
+.swiper-wrapper {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 1000px;
+  height: 355px;
+  /* object-fit: cover; */
+  border-radius: 20px;
+}
+
+/* Catalogue's style */
+
+.catalogue {
+  margin: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper__catalogue{
+  width: 176px !important; 
+  height: 128px !important;
+  overflow: hidden;
+  background: #9b9b9b15;
+  margin: 10px;
+}
+.swiper__catalogue>a>h4{
+  font-size: 12px;
+  color: #000;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  z-index: 5;
+}
+.swiper__catalogue>a>img{
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.all__catalogues>a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* populars style */
+
+.populars{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.populars__top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.populars__top>a{
+  color: rgba(0, 0, 255, 0.746);
+  font-size: 12px;
+}
+.populars__top>h2{
+  color: #000000c2;
+  font-size: 25px;
+}
+.populars__wrapper{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+  width: 1000px !important;
+}
+.populars__item{
+  width: fit-content !important;
+  box-sizing: content-box !important;
+  padding: 5px 16px;
+  background: none;
+  border: 0.8px solid #ececec;
+  border-radius: 30px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+.swiper-button-next{
+  box-sizing: content-box !important;
+  height: 20px !important;
+  color: #000000 !important;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 10px 0;
+}
+
+.swiper-button-prev{
+  box-sizing: content-box !important;
+  height: 20px !important;
+  color: #000000 !important;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 10px 0;
+}
+
+.next__populars{
+  position: absolute;
+  background: none !important;
+  top: 70px !important;
+  right: -10px !important;
+}
+.prev__populars{
+  position: absolute;
+  background: none !important;
+  top: 70px !important;
+  left: -10px !important;
+}
+
+
+
+
+
+/* JS styles */
+
+.display__off {
+  display: none;
+  z-index: -20;
+}
+.border__err {
+  border-color: red;
+  position: relative;
+}
+.border__err::after {
+  content: "To'g'ri kirit";
+  position: absolute;
+  bottom: -10;
+  color: #000;
+  z-index: 6;
+}
+
+@media (max-width: 1025px) {
+  .header__topbg {
+    width: 100%;
+    background: #00000017;
+  }
+  .header-top {
+    display: none;
+  }
+  body {
+    max-width: 1025px;
+  }
+  .header__topM1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .header__topM1 > .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .selectbox-header {
+    border-color: #000;
+    color: #000;
+  }
+  .selectbox-header > select {
+    color: #000;
+  }
+  .header-bottom {
+    display: none;
+  }
+  .locationM1 {
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+  }
+  .header__search {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .header__search > input {
+    height: 100%;
+  }
+  .header__search > button {
+    font-size: 25px;
+    padding: 0;
+  }
+  .header__bottomM1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+  }
+  .header__bottomM1 > button {
+    border: 1px solid #00000031;
+    font-size: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .cities-listM1 {
+    position: absolute;
+    z-index: 5;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #ce7c02;
+  }
+  .bottom__nav {
+    width: 100vw;
+    padding: 10px;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 999;
+  }
+  .bottom__nav > button {
+    color: #ffffffb9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+  .login {
+    width: 320px;
+  }
+  .login__title {
+    font-size: 16px;
+  }
+  .login__phone {
+    height: 30px;
+  }
+  .login__login {
+    height: 30px;
+  }
+  .login__name {
+    height: 30px;
+  }
+  .login__btn {
+    font-size: 12px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 280px;
+  }
+  .swiper-slide,
+  .swiper-wrapper,
+  .swiper {
+    width: 850px;
+    height: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .header__topM1 {
+    display: none;
+  }
+  .header__topM2 {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__topM2 > .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .locationM2 {
+    position: relative;
+    cursor: pointer;
+  }
+  .cities-listM2 {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ce7c02;
+    right: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .login {
+    gap: 10px;
+  }
+  .login__title {
+    font-size: 12px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 180px;
+  }
+  .swiper-slide,
+  .swiper-wrapper,
+  .swiper {
+    width: 650px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 340px) {
+  .selectbox-header {
+    display: none;
+  }
+  .bottom__nav > button {
+    font-size: 10px;
+  }
+  .login {
+    width: 280px;
+  }
+  .bottom__heart {
+    font-size: 10px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 100px;
+  }
+  .swiper-slide,
+  .swiper-wrapper,
+  .swiper {
+    width: 300px;
+    height: 100px;
+  }
+  .swiper__catalogue{
+  width: 156px !important; 
+  height: 100px !important;
+  overflow: hidden;
+  background: #9b9b9b15;
+  margin: 10px;
+}
+}
+/* 340px, 768px, 1025px */

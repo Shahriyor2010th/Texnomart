@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'zbekistonda maishiy texnika va elektronika onlayn do'koni | Texnomart</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="login__bg display__off">
+        <div class="login">
+            <button class="close__login"><i class="fa-solid fa-xmark"></i></button>
+            <h1 class="login__title">Kirish yoki ro'yxatdan o'tish</h1>
+            <input class="login__phone" type="text" placeholder="Telefon" value="+998 ">
+            <input class="login__login display__off" type="text" placeholder="Login*">
+            <input class="login__name display__off" type="text" placeholder="Ism">
+            <button class="login__btn">Kodni olish</button>
+            <button class="login__type">Login orqali kirish</button>
+            <button class="login__type2 display__off">Telefon orqali kirish</button>
+        </div>
+    </div>
+    <div class="cart__bg display__off">
+        <div class="cart ">
+            <div class="cart__top">
+                <h1 class="cart__title">Savatcha</h1>
+                <button class="cart__close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cart__content">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Savatchada xozirda <br> hech nima yo'q</p>
+                <a href="https://texnomart.uz/naman/katalog/">Xarid qilish</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="bottom__nav">
+            <button><i class="fa-regular fa-house"></i>Bosh sahifa</button>
+            <button><i class="fa-solid fa-bars"></i>Katalog</button>
+            <button><i class="fa-solid fa-cart-shopping"></i>Savatcha</button>
+            <button><a href="https://texnomart.uz/naman/wishlist/" class="bottom__heart"><i
+                        class="fa-regular fa-heart"></i>Sevimlilar</a></button>
+            <button class="header__login-btn"><i class="fa-regular fa-user"></i>Kirish</button>
+        </div>
+        <div class="header__topbg">
+            <div class="header-top">
+                <div class="left">
+                    <div class="location">
+                        <p><i class="fa-solid fa-location-dot"></i>Namangan</p>
+                        <div class="cities-list display__off">
+                            <h2 class="choosing__city">Shaharni tanlang</h2>
+                            <div class="listbox">
+                                <ul>
+                                    <li>Toshkent</li>
+                                    <li>Buxoro</li>
+                                    <li>Bag'dod</li>
+                                    <li>Termiz</li>
+                                    <li>Nukus</li>
+                                    <li>Chirchiq</li>
+                                    <li>Andijon</li>
+                                    <li>Samarqand</li>
+                                    <li>Qarshi</li>
+                                    <li>Farg'ona</li>
+                                </ul>
+                                <ul>
+                                    <li>Marg'ilon</li>
+                                    <li>Namangan</li>
+                                    <li>Yangiyo'l</li>
+                                    <li>Qo'qon</li>
+                                    <li>Keles</li>
+                                    <li>Asaka</li>
+                                    <li>Bekobod</li>
+                                    <li>Uchko'prik</li>
+                                    <li>Jizzax</li>
+                                    <li>Urganch</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-linkbox">
+                        <a href="https://texnomart.uz/naman/shops-map/">Bizning do'konlarimiz</a>
+                        <a href="https://texnomart.uz/page/b2b_sale/">Yuridik shaxslar uchun</a>
+                        <a href="https://texnomart.uz/page/purchase-online/">To'lov usullari</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Aloqa markazi:+998-71-209-99-44</p>
+                    <div class="selectbox-header">
+                        <i class="fa-solid fa-globe"></i>
+                        <select name="language" id="language">
+                            <option value="Uzbek">UZ</option>
+                            <option value="Russian">RU</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="header__topM1">
+                <div class="box">
+                    <div>
+                        <p class="locationM1"><i class="fa-solid fa-location-dot"></i>Namangan</p>
+                        <div class="cities-listM1 display__off">
+                            <h2 class="choosing__city">Shaharni tanlang</h2>
+                            <div class="listbox">
+                                <ul>
+                                    <li>Toshkent</li>
+                                    <li>Buxoro</li>
+                                    <li>Bag'dod</li>
+                                    <li>Termiz</li>
+                                    <li>Nukus</li>
+                                    <li>Chirchiq</li>
+                                    <li>Andijon</li>
+                                    <li>Samarqand</li>
+                                    <li>Qarshi</li>
+                                    <li>Farg'ona</li>
+                                </ul>
+                                <ul>
+                                    <li>Marg'ilon</li>
+                                    <li>Namangan</li>
+                                    <li>Yangiyo'l</li>
+                                    <li>Qo'qon</li>
+                                    <li>Keles</li>
+                                    <li>Asaka</li>
+                                    <li>Bekobod</li>
+                                    <li>Uchko'prik</li>
+                                    <li>Jizzax</li>
+                                    <li>Urganch</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selectbox-header">
+                        <i class="fa-solid fa-globe"></i>
+                        <select name="language" id="language">
+                            <option value="Uzbek">UZ</option>
+                            <option value="Russian">RU</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header__b-logo"><a href="./index.html">texnomart*</a></div>
+                <div class="phone__numberM1"><i class="fa-solid fa-phone"></i>+998-71-209-99-44</div>
+            </div>
+            <div class="header__topM2">
+                <div class="header__b-logo"><a href="./index.html">texnomart*</a></div>
+                <div class="box">
+                    <div>
+                        <p class="locationM2"><i class="fa-solid fa-location-dot"></i>Namangan</p>
+                        <div class="cities-listM2 display__off">
+                            <h2 class="choosing__city">Shaharni tanlang</h2>
+                            <div class="listbox">
+                                <ul>
+                                    <li>Toshkent</li>
+                                    <li>Buxoro</li>
+                                    <li>Bag'dod</li>
+                                    <li>Termiz</li>
+                                    <li>Nukus</li>
+                                    <li>Chirchiq</li>
+                                    <li>Andijon</li>
+                                    <li>Samarqand</li>
+                                    <li>Qarshi</li>
+                                    <li>Farg'ona</li>
+                                </ul>
+                                <ul>
+                                    <li>Marg'ilon</li>
+                                    <li>Namangan</li>
+                                    <li>Yangiyo'l</li>
+                                    <li>Qo'qon</li>
+                                    <li>Keles</li>
+                                    <li>Asaka</li>
+                                    <li>Bekobod</li>
+                                    <li>Uchko'prik</li>
+                                    <li>Jizzax</li>
+                                    <li>Urganch</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selectbox-header">
+                        <i class="fa-solid fa-globe"></i>
+                        <select name="language" id="language">
+                            <option value="Uzbek">UZ</option>
+                            <option value="Russian">RU</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottombg">
+            <div class="header-bottom">
+                <div class="header__b-logo"><a href="./index.html">texnomart*</a></div>
+                <button class="header__catalog"><i class="fa-solid fa-bars"></i>Katalog</button>
+                <div class="header__search">
+                    <input type="text" class="search__input" placeholder="Qidirish">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <ul class="header__buttonbox">
+                    <li><button class="header__login-btn header__login-origin"><i
+                                class="fa-solid fa-user"></i>Kirish</button></li>
+                    <li><button><a href="https://texnomart.uz/naman/wishlist/"><i
+                                    class="fa-regular fa-heart"></i>Sevimlilar</a></button>
+                    </li>
+                    <li><button class="header__cart"><i class="fa-solid fa-cart-shopping"></i>Savatcha</button></li>
+                </ul>
+            </div>
+            <div class="header__bottomM1">
+                <div class="header__search">
+                    <input type="text" class="search__input" placeholder="Qidirish">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a
+                        href="https://texnomart.uz/promotions/texnika-bez-lisnego-poka-est-lovi-moment/"><img
+                            src="./images/swiper1-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a
+                        href="https://texnomart.uz/promotions/nazad-v-skolu-vpered-k-znaniiam/"><img
+                            src="./images/swiper2-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a
+                        href="https://texnomart.uz/promotions/woman-card-ot-ipak-yuli-bank-eshhe-vygodnee-v-texnomart/"><img
+                            src="./images/swiper3-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="https://texnomart.uz/promotions/50-0-2/"><img
+                            src="./images/swiper4-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="https://texnomart.uz/promotions/texnomart-anor/"><img
+                            src="./images/swiper5-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="https://texnomart.uz/promotions/apple-iphone-18-pro-soon/"><img
+                            src="./images/swiper6-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="https://texnomart.uz/promotions/xiaomi-redmi-note-17/"><img
+                            src="./images/swiper7-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="https://texnomart.uz/promotions/apple-iphone-duo-soon/"><img
+                            src="./images/swiper8-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="https://texnomart.uz/promotions/apple-watch-series-12-soon/"><img
+                            src="./images/swiper9-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="https://texnomart.uz/promotions/dom-milyi-dom/"><img
+                            src="./images/swiper11-img.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="https://texnomart.uz/promotions/bystraia-dostavka/"><img
+                            src="./images/swiper12-img.webp" alt=""></a></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <section class="catalogue">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/promotions/">
+                        <h4>Aksiyalar va chegirmalar</h4>
+                        <img src="./images/aksiya__img.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue smartfony">
+                    <a href="https://texnomart.uz/naman/katalog/smartfony/">
+                        <h4>Smartfonlar</h4>
+                        <img src="./images/Smartpones.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/vse-kondicionery-5/">
+                        <h4>Havo sovutgichlar</h4>
+                        <img src="./images/air__condit.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/pylesosy/">
+                        <h4>Changyutgichlar</h4>
+                        <img src="./images/Vacuums.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/vse-holodilniki/">
+                        <h4>Muzlatkichlar</h4>
+                        <img src="./images/fridges.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/noutbuki/">
+                        <h4>Noutbuklar</h4>
+                        <img src="./images/Laptop.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/televizory/">
+                        <h4>Televizorlar</h4>
+                        <img src="./images/TVs.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/kofemashiny-i-kofevarki/">
+                        <h4>Qahva mashinalari</h4>
+                        <img src="./images/coffee__makers.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/stiralnye-mashinki/">
+                        <h4>Kir yuvish mashinalari</h4>
+                        <img src="./images/Laundry__machines.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/fen-dlya-volos/">
+                        <h4>Fenlar</h4>
+                        <img src="./images/Hair__driers.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue">
+                    <a href="https://texnomart.uz/naman/katalog/planshety/">
+                        <h4>Planshetlar</h4>
+                        <img src="./images/Big__phones.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper__catalogue all__catalogues">
+                    <a href="https://texnomart.uz/naman/katalog/">
+                        <h4>Barcha kategoriyalar == ></h4>
+                    </a>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+        <section class="populars">
+            <div class="populars__top">
+                <h2>Mashhur mahsulotlar</h2>
+                <a href="https://texnomart.uz/naman/katalog/">Barchasini ko'rish --></a>
+            </div>
+            <div class="swiper-wrapper populars__wrapper">
+                <a href="" class="swiper-slide populars__item">
+                    Smartfonlar
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Talevizorlar
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Planshetlar
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Kir yuvish mashinalari
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Konditsionerlar
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Muzlatgichlar
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Changyutgichlar
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Noutbuklar
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Qahva mashinalari
+                </a>
+                <a href="" class="swiper-slide populars__item">
+                    Soch quritgichlar
+                </a>
+                
+            </div>
+            <div class="swiper-button-next next__populars"></div>
+                <div class="swiper-button-prev prev__populars"></div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="./app.js">
+    </script>
+    <!-- <script>
+        var swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+            slidesPerView: 1.2,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script> -->
+</body>
+
+</html>
