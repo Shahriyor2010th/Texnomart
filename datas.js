@@ -1,5 +1,6 @@
-export const products = [
+export const phones = [
   {
+    id: 1,
     name: "Honor 600 8/256GB Black",
     storage: "256GB",
     ram: "8GB",
@@ -12,6 +13,7 @@ export const products = [
   },
 
   {
+    id: 2,
     name: "Samsung Galaxy A57 8/256GB Dark Blue",
     storage: "256GB",
     ram: "8GB",
@@ -25,6 +27,7 @@ export const products = [
   },
 
   {
+    id: 3,
     name: "Samsung Galaxy A27 5G 8/256GB",
     storage: "256GB",
     ram: "8GB",
@@ -38,6 +41,7 @@ export const products = [
   },
 
   {
+    id: 4,
     name: "Samsung Galaxy S26 Ultra 12/256GB",
     storage: "256GB",
     ram: "12GB",
@@ -50,6 +54,7 @@ export const products = [
   },
 
   {
+    id: 5,
     name: "OPPO Reno15 F 5G 8/256GB Twilight Blue",
     storage: "256GB",
     ram: "8GB",
@@ -63,6 +68,7 @@ export const products = [
   },
 
   {
+    id: 6,
     name: "OPPO A6 Pro 8/256GB Lunar Titanium",
     storage: "256GB",
     ram: "8GB",
@@ -72,5 +78,38 @@ export const products = [
     installment: "449 917 so'mdan / 18 oy",
     price: "5 399 000 so'm",
     badges: ["VIMEI"]
+  }
+];
+
+export const TVs = [
+  {
+    id: 7,
+    name: "Haier H55K801UG Smart Televizori",
+    category: "Televizor",
+    discount: "50+0+2",
+    reviews: 0,
+    installment: 750000,
+    months: 18,
+    price: 9000000
+  },
+  {
+    id: 8,
+    name: "Samsung UE43U8001F Smart Televizori",
+    category: "Televizor",
+    discount: "50+0+2",
+    reviews: 0,
+    installment: 332334,
+    months: 18,
+    price: 3988000
+  },
+  {
+    id: 9,
+    name: "Hisense 75E8Q Smart televizori",
+    category: "Televizor",
+    discount: "50+0+2",
+    reviews: 0,
+    installment: 1212917,
+    months: 18,
+    price: 14555000
   }
 ];

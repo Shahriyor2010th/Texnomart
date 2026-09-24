@@ -229,6 +229,48 @@ input {
   outline: none;
 }
 
+/* Support style */
+
+.chat {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://texnomart.uz/_nuxt/img/chat-open.50e3325.svg);
+  background-size: cover;
+}
+
+.chat__box2 {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #fff;
+  background-image: url(https://texnomart.uz/_nuxt/img/chat-close.381e748.svg);
+  background-size: cover;
+}
+.support__ul {
+  position: absolute;
+  top: -200px;
+  left: -150px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.support__ul > li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+
 /* Login */
 
 .login__bg {
@@ -592,14 +634,14 @@ header {
   position: relative;
 }
 
-.swiper__catalogue{
-  width: 176px !important; 
+.swiper__catalogue {
+  width: 176px !important;
   height: 128px !important;
   overflow: hidden;
   background: #9b9b9b15;
   margin: 10px;
 }
-.swiper__catalogue>a>h4{
+.swiper__catalogue > a > h4 {
   font-size: 12px;
   color: #000;
   position: absolute;
@@ -607,7 +649,7 @@ header {
   top: 10px;
   z-index: 5;
 }
-.swiper__catalogue>a>img{
+.swiper__catalogue > a > img {
   width: 100%;
   height: 100%;
   padding-left: 50px;
@@ -617,45 +659,54 @@ header {
   object-fit: cover;
 }
 
-.all__catalogues>a{
+.all__catalogues > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.next__cat {
+  position: absolute !important;
+  top: 48% !important;
+  z-index: 1 !important;
+}
+.prev__cat {
+  position: absolute !important;
+  top: 48% !important;
+  z-index: 1 !important;
+}
 
 /* populars style */
 
-.populars{
+.populars {
   width: 100%;
   position: relative;
   overflow: hidden;
   margin-bottom: 50px;
   padding-left: 20px;
 }
-.populars__top{
+.populars__top {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.populars__top>a{
+.populars__top > a {
   color: rgba(0, 0, 255, 0.746);
   font-size: 12px;
 }
-.populars__top>h2{
+.populars__top > h2 {
   color: #000000c2;
   font-size: 25px;
 }
-.populars__wrapper{
+.populars__wrapper {
   width: 100%;
   margin-top: 20px;
   display: flex;
   gap: 8px;
   width: 1000px !important;
 }
-.populars__item{
+.populars__item {
   width: fit-content !important;
   box-sizing: content-box !important;
   padding: 5px 16px;
@@ -666,91 +717,61 @@ header {
   font-size: 14px;
   font-weight: 400;
 }
-.swiper-button-next{
-  box-sizing: content-box !important;
-  height: 20px !important;
-  color: #000000 !important;
-  background: #ffffff;
-  border-radius: 50%;
-  padding: 10px 0;
-}
 
-.swiper-button-prev{
-  box-sizing: content-box !important;
-  height: 20px !important;
-  color: #000000 !important;
-  background: #ffffff;
-  border-radius: 50%;
-  padding: 10px 0;
-}
 
-.next__populars{
+.next__populars {
   position: absolute;
-  background: none !important;
+  background: #e4e4e4c8 !important;
   top: 70px !important;
   right: -10px !important;
+  z-index: 1 !important;
 }
-.prev__populars{
+.prev__populars {
   position: absolute;
-  background: none !important;
+  background: #e4e4e4c8 !important;
   top: 70px !important;
   left: -10px !important;
+  z-index: 1 !important;
 }
-
-
 
 /* Card styles */
 
 .card__wrapper{
-  display: flex;
-  margin-top: 50px;
-  width: 100%;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
+
 .card__wrap{
-  width: 100vw;
   display: flex;
   gap: 20px;
 }
+
 .card{
-  width: 278px !important;
-  height: 484px !important;
-  background: rgba(206, 206, 206, 0.193);
-  position: relative;
+  background: #f2f2f2;
+  width: 284px !important;
+  height: 490px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px !important;
+  padding: 8px 8px 16px;
+  border-radius: 10px;
+  position: relative !important;
 }
-.card__img{
+.card>img{
   width: 100% !important;
-  height: 272px !important;
-  margin-bottom: 30px;
-  padding: 10px;
+  height: 260px !important;
+}
+.card__title{
+  font-size: 16px;
+  color: #333333c6;
+  margin-top: 20px;
 }
 .card__info{
-  padding: 10px;
-  text-align: left;
-}
-.card__name{
-  font-size: 18px;
-  color: #00000073;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.card__info>.star{
   display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 20px;
-  font-size: 16px;
-  color: #000000d1;
-  margin-bottom: 10px;
-}
-.step__pay{
-  font-size: 16px;
-  background: #00000053;
-  width: fit-content;
-  padding: 4px 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: baseline !important;
+  text-align: left;
+  gap: 15px;
 }
 .card__bottom{
   position: absolute;
@@ -758,14 +779,29 @@ header {
   display: flex;
   width: 90%;
   justify-content: space-between;
+}
+.card__rating{
+  font-size: 16px;
+  color: #9c9c9c;
+}
+.card__credit{
+  background: #c7c7c7;
+  padding: 3px 6px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.
+.card__bottom>button{
+  font-size: 19px;
+}
+.card__bottom>span{
   font-size: 20px;
 }
-.card__bottom>.add__to-cart{
-  padding: 5px;
-  border: 1px solid rgba(255, 174, 0, 0.489);
-  border-radius: 10px;
-}
 
+.card__next{
+  position: absolute !important;
+  z-index: 10 !important;
+}
 
 
 /* JS styles */
@@ -785,7 +821,7 @@ header {
   color: #000;
   z-index: 6;
 }
-.selected{
+.selected {
   background: rgba(255, 174, 0, 0.566);
 }
 
@@ -864,6 +900,9 @@ header {
     border-radius: 10px;
     margin-top: 10px;
     border: 1px solid #ce7c02;
+  }
+  .card__wrapper {
+    margin-bottom: 200px;
   }
   .bottom__nav {
     width: 100vw;
@@ -954,6 +993,32 @@ header {
     width: 650px;
     height: 180px;
   }
+  .swiper-button-next {
+    height: 15px !important;
+    width: 39px !important;
+  }
+  .swiper-button-prev {
+    height: 15px !important;
+    width: 39px !important;
+  }
+  .card{
+    height: 433px !important;
+  }
+  .card__img{
+    margin-bottom: 0;
+  }
+  .card__name{
+    font-size: 15px;
+  }
+  .star{
+    font-size: 13px !important;
+  }
+  .step__pay{
+    font-size: 13px;
+  }
+  .card__bottom>span{
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 340px) {
@@ -979,12 +1044,45 @@ header {
     width: 300px;
     height: 100px;
   }
-  .swiper__catalogue{
-  width: 156px !important; 
-  height: 100px !important;
-  overflow: hidden;
-  background: #9b9b9b15;
-  margin: 10px;
-}
+  .swiper__catalogue {
+    width: 156px !important;
+    height: 100px !important;
+    overflow: hidden;
+    background: #9b9b9b15;
+    margin: 10px;
+  }
+  .swiper-button-next {
+    height: 8px !important;
+    width: 29px !important;
+  }
+  .swiper-button-prev {
+    height: 8px !important;
+    width: 29px !important;
+  }
+  .card{
+    width: 200px !important;
+    height: 350px !important;
+  } 
+  .card__img{
+    height: 200px !important;
+  }
+  .card__name{
+    font-size: 12px;
+  }
+  .star{
+    font-size: 10px;
+  }
+  .step__pay{
+    font-size: 10px;
+  }
+  .card__bottom>span{
+    font-size: 15px;
+  }
+  .next__populars{
+    top: 100px !important;
+  }
+  .prev__populars{
+    top: 100px !important;
+  }
 }
 /* 340px, 768px, 1025px */

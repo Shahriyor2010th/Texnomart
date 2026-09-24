@@ -1,5 +1,3 @@
-
-
 let body = document.querySelector("body");
 let locate = document.querySelector(".location");
 let citiesList = document.querySelector(".cities-list");
@@ -119,70 +117,209 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var swiper = new Swiper (".catalogue", {
-  slidesPerView: 6.4,
-  mousewheel:true,
+var swiper = new Swiper(".catalogue", {
+  mousewheel: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-})
+  breakpoints: {
+    1026: {
+      slidesPerView: 6.3,
+    },
+    769: {
+      slidesPerView: 5.2,
+    },
+    341: {
+      slidesPerView: 3.9,
+    },
+    1: {
+      slidesPerView: 1.9,
+    },
+  },
+});
 
 var swiper = new Swiper(".populars", {
-  slidesPerView:9,
+  slidesPerView: 9,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-})
-
-let cardWrap = document.querySelector(".card__wrap")
-
-import { products } from './datas.js';
-
-products.forEach((item, index)=>{
-  // let ind = index
-  
-  
-  let card = document.createElement("div")
-  let rating = ""
-  if (item.review == 0){
-    rating += `🩶 Sharq yo'q`
-  }
-  else{
-    rating +=`❤️ ${item.review} ta sharq`
-  }
-  card.innerHTML = `
-    <img src="./images/card__img${index}.webp" alt="" class="card__img">
-    <div class="card__info">
-    <h3 class="card__name">${item.name}</h3>
-    <span class="star">${rating}</span>
-    <p class="step__pay">${item.installment}</p>
-    <div class="card__bottom">
-      <span>${item.price}</span>
-      <button class="add__to-cart">🛒</button>
-    </div>
-    </div>
-  `
-  card.classList.add("card")
-  card.classList.add("swiper-slide")
-  cardWrap.append(card)
-
-})
-
-var swiper = new Swiper(".card__wrapper", {
-  slidesPerView:4.3,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  breakpoints: {
+    1026: {
+      slidesPerView: 9.2,
+    },
+    769: {
+      slidesPerView: 7.3,
+    },
+    341: {
+      slidesPerView: 5.5,
+    },
+    1: {
+      slidesPerView: 2.38,
+    },
   },
-})
+});
 
+let cardWrapper = document.querySelector(".card__wrap");
 
-let addCart = document.querySelectorAll(".add__to-cart")
+import { phones } from "./datas.js";
 
-console.log(addCart);
+function addPhone() {
+  cardWrapper.replaceChildren();
+  phones.forEach((item, index) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.review == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.review} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="./images/card__img${index}.webp" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price}</span>
+          <button>🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    console.log(box.getHTML());
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+
+addPhone();
+
+let smartphones = document.querySelector(".smartphones");
+smartphones.onclick = addPhone
+
+// let cardWrap = document.querySelector(".card__wrap");
+
+// import { products } from "./datas.js";
+
+// products.forEach((item, index) => {
+//   // let ind = index
+
+//   let card = document.createElement("div");
+//   let rating = "";
+//   if (item.review == 0) {
+//     rating += `🩶 Sharq yo'q`;
+//   } else {
+//     rating += `❤️ ${item.review} ta sharq`;
+//   }
+//   card.innerHTML = `
+//     <img src="./images/card__img${index}.webp" alt="" class="card__img">
+//     <div class="card__info">
+//     <h3 class="card__name">${item.name}</h3>
+//     <span class="star">${rating}</span>
+//     <p class="step__pay">${item.installment}</p>
+//     <div class="card__bottom">
+//       <span>${item.price}</span>
+//       <button class="add__to-cart">🛒</button>
+//     </div>
+//     </div>
+//   `;
+//   card.classList.add("card");
+//   card.classList.add("swiper-slide");
+//   cardWrap.append(card);
+// });
+
+// var swiper__cards = new Swiper(".card__wrapper", {
+//   slidesPerView: 4.3,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints: {
+//     1026: {
+//       slidesPerView: 4.3,
+//     },
+//     769: {
+//       slidesPerView: 3.4,
+//     },
+//     341: {
+//       slidesPerView: 2.5,
+//     },
+//     1: {
+//       slidesPerView: 1.55,
+//     },
+//   },
+// });
+
+// let chat = document.querySelector(".chat");
+// let chatBox = document.querySelector(".chat__box");
+// let supportUL = document.querySelector(".support__ul");
+
+// chat.onclick = () => {
+//   chatBox.classList.toggle("chat__box2");
+//   supportUL.classList.toggle("display__off");
+// };
+
+// let addCart = document.querySelectorAll(".add__to-cart");
+
+// let TVsIn = document.querySelector(".TVs");
+
+// import { TVs } from "./datas.js";
+
+// let smartphones = document.querySelector(".smartphones");
+
+// TVsIn.onclick = TVprods;
+
+// function TVprods() {
+//   cardWrap.innerHTML = "";
+//   smartphones.classList.remove("selected");
+//   TVsIn.classList.add("selected");
+
+//   TVs.forEach((item, index) => {
+//     let card = document.createElement("div");
+//     let rating = "";
+//     if (item.review == 0 || item.reviews !== undefined) {
+//       rating += `🩶 Sharq yo'q`;
+//     } else {
+//       rating += `❤️ ${item.review} ta sharq`;
+//     }
+//     card.innerHTML = `
+//     <img src="./images/card_img${item.id}.webp" alt="" class="card__img card__TV"></img>
+//     <div class="card__info">
+//     <h3 class="card__name">${item.name}</h3>
+//     <span class="star">${rating}</span>
+//     <p class="step__pay">${item.installment} so'mdan / 18oy</p>
+//     <div class="card__bottom">
+//       <span>${item.price} so'm</span>
+//       <button class="add__to-cart">🛒</button>
+//     </div>
+//     </div>
+//   `;
+
+//     console.log(card);
+//     card.classList.add("card");
+//     cardWrap.append(card);
+//     console.log(cardWrap);
+//     swiper__cards.slideTo(0);
+//     swiper__cards.params.loop = true;
+//     swiper__cards.update();
+//   });
+// }
 
 // addCart.onclick =  ()=>{
 //   if (addCart.textContent == "🛒"){
