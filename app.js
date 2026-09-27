@@ -6,6 +6,9 @@ let citiesListM2 = document.querySelector(".cities-listM2");
 let locationM1 = document.querySelector(".locationM1");
 let locationM2 = document.querySelector(".locationM2");
 
+let addedProducts = [];
+
+
 locate.onclick = function () {
   citiesList.classList.toggle("display__off");
 };
@@ -89,9 +92,20 @@ loginPhone.oninput = function () {
 let shoppingCart = document.querySelector(".header__cart");
 let cartBG = document.querySelector(".cart__bg");
 let cartClose = document.querySelector(".cart__close");
-
+let bottomCart = document.querySelector(".bottom__nav-cart");
+let addedCart = document.querySelector(".added__cart-bg")
 shoppingCart.onclick = () => {
-  cartBG.classList.remove("display__off");
+  if (addedProducts.length == 0){
+    cartBG.classList.remove("display__off");
+  }
+  else{
+
+  }
+};
+bottomCart.onclick = () => {
+  if (addedProducts.length == 0){
+    cartBG.classList.remove("display__off");
+  }
 };
 
 cartClose.onclick = () => {
@@ -162,6 +176,7 @@ var swiper = new Swiper(".populars", {
   },
 });
 
+
 let cardWrapper = document.querySelector(".card__wrap");
 
 import { phones } from "./datas.js";
@@ -186,14 +201,21 @@ function addPhone() {
         <p class="card__credit">${item.installment}</p>
         <div class="card__bottom">
           <span>${item.price}</span>
-          <button>🛒</button>
+          <button id="add__cart">🛒</button>
         </div>
 
       </div>
 
     `;
 
-    console.log(box.getHTML());
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        console.log(addedProducts);
+      }
+    };
 
     box.classList.add("swiper-slide");
     box.classList.add("card");
@@ -205,13 +227,114 @@ function addPhone() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
   });
 }
 
 addPhone();
 
 let smartphones = document.querySelector(".smartphones");
-smartphones.onclick = addPhone
+smartphones.onclick = addPhone;
+
+let chat = document.querySelector(".chat");
+let chatBox = document.querySelector(".chat__box");
+let supportUL = document.querySelector(".support__ul");
+
+chat.onclick = () => {
+  chatBox.classList.toggle("chat__box2");
+  supportUL.classList.toggle("display__off");
+};
+
+let headerCat = document.querySelector(".header__catalog");
+let horBox = document.querySelector(".horror__img");
+let crepScream = document.querySelector(".creepy__scream");
+function scream() {
+  horBox.classList.toggle("display__off");
+  horBox.requestFullscreen();
+  crepScream.play();
+}
+
+headerCat.onclick = scream;
+horBox.onclick = () => {
+  horBox.classList.toggle("display__off");
+};
+
+import { newProds } from "./datas.js";
+
+function renderNews() {
+  let newsBox = document.querySelector(".news__wrapper");
+
+  newProds.forEach((item) => {
+    let card = document.createElement("div");
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+    card.innerHTML = `
+    <img src="./images/card__img${item.id}.webp" alt="" class="card__img">
+    <div class="card__info">
+    <h3 class="card__name">${item.name}</h3>
+    <span class="star">${rating}</span>
+    <p class="step__pay">${item.installment}</p>
+    <div class="card__bottom">
+      <span>${item.price}</span>
+      <button  class="add__to-cart">🛒</button>
+    </div>
+    </div>
+  `;
+
+    let btn = card.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        console.log(addedProducts);
+      }
+    };
+
+    newsBox.append(card);
+    card.classList.add("new__card");
+    card.classList.add("swiper-slide");
+  });
+  var newSwiper = new Swiper(".new__prods", {
+    slidesPerView: 4.36,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 3.6,
+      },
+      1: {
+        slidesPerView: 1.6,
+      },
+    },
+  });
+}
+
+renderNews();
 
 // let cardWrap = document.querySelector(".card__wrap");
 
@@ -266,14 +389,7 @@ smartphones.onclick = addPhone
 //   },
 // });
 
-// let chat = document.querySelector(".chat");
-// let chatBox = document.querySelector(".chat__box");
-// let supportUL = document.querySelector(".support__ul");
-
-// chat.onclick = () => {
-//   chatBox.classList.toggle("chat__box2");
-//   supportUL.classList.toggle("display__off");
-// };
+//
 
 // let addCart = document.querySelectorAll(".add__to-cart");
 

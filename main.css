@@ -202,7 +202,7 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1280px;
+  max-width: 1435px;
   margin: 0 auto;
   background-color: #fff;
   font-family: "Inter";
@@ -718,7 +718,6 @@ header {
   font-weight: 400;
 }
 
-
 .next__populars {
   position: absolute;
   background: #e4e4e4c8 !important;
@@ -736,17 +735,17 @@ header {
 
 /* Card styles */
 
-.card__wrapper{
+.card__wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.card__wrap{
+.card__wrap {
   display: flex;
   gap: 20px;
 }
 
-.card{
+.card {
   background: #f2f2f2;
   width: 284px !important;
   height: 490px !important;
@@ -757,51 +756,168 @@ header {
   border-radius: 10px;
   position: relative !important;
 }
-.card>img{
+.card > img {
   width: 100% !important;
   height: 260px !important;
 }
-.card__title{
+.card__title {
   font-size: 16px;
   color: #333333c6;
   margin-top: 20px;
 }
-.card__info{
+.card__info {
   display: flex;
   flex-direction: column;
   align-items: baseline !important;
   text-align: left;
   gap: 15px;
 }
-.card__bottom{
+.card__bottom {
   position: absolute;
   bottom: 10px;
   display: flex;
   width: 90%;
   justify-content: space-between;
 }
-.card__rating{
+.card__rating {
   font-size: 16px;
   color: #9c9c9c;
 }
-.card__credit{
+.card__credit {
   background: #c7c7c7;
   padding: 3px 6px;
   border-radius: 20px;
   font-size: 13px;
 }
-.
-.card__bottom>button{
+. .card__bottom > button {
   font-size: 19px;
 }
-.card__bottom>span{
+.card__bottom > span {
   font-size: 20px;
 }
 
-.card__next{
+.card__next {
   position: absolute !important;
   z-index: 10 !important;
 }
+
+/* Special screen */
+
+.horror__img {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.horror__img > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* new products */
+
+.new__prods {
+  overflow: hidden;
+  position: relative;
+}
+.news__wrapper {
+  display: flex;
+  gap: 10px;
+}
+.news__title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+.new__card {
+  width: 284px !important;
+  height: 466px !important;
+  padding: 10px;
+  background: #00000018;
+  border-radius: 20px;
+}
+.new__card > .card__info > .card__name {
+  font-size: 16px;
+  color: #373f41;
+}
+.new__card > .card__info > .star {
+  font-size: 14px;
+  color: #444444c4;
+}
+.new__card > .card__info > .step__pay {
+  font-size: 14px;
+  color: #000;
+  background: #c7c7c7;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+.new__card > .card__info > .card__name {
+  font-size: 16px;
+  color: #373f41;
+}
+.new__card > .card__info > .card__name {
+  font-size: 16px;
+  color: #373f41;
+}
+.new__card > img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 278px;
+}
+
+/* added__Cart style */
+
+.added__cart-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0000006e;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.added__cart{
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+.added__cart>h1{
+  width: 100%;
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+.acart__close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.acart__bottom{
+  width: 1279px;
+}
+.checkbox__cart{
+  width: 24px;
+  height: 24px;
+}
+.acart__left-top{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.clear__selected{
+  margin-left: 30%;
+  font-size: 14px;
+}
+.choose__all{
+  font-size: 14px;
+}
+
+
+
 
 
 /* JS styles */
@@ -949,6 +1065,12 @@ header {
     width: 850px;
     height: 280px;
   }
+  .news__wrapper {
+    margin-bottom: 100px;
+  }
+  .news__title {
+    margin-top: 0;
+  }
 }
 @media (max-width: 768px) {
   .header__topM1 {
@@ -1001,23 +1123,27 @@ header {
     height: 15px !important;
     width: 39px !important;
   }
-  .card{
+  .card {
     height: 433px !important;
   }
-  .card__img{
+  .card__img {
     margin-bottom: 0;
   }
-  .card__name{
+  .card__name {
     font-size: 15px;
   }
-  .star{
+  .star {
     font-size: 13px !important;
   }
-  .step__pay{
+  .step__pay {
     font-size: 13px;
   }
-  .card__bottom>span{
+  .card__bottom > span {
     font-size: 17px;
+  }
+  .new__card {
+    height: 386px !important;
+    width: 200px !important;
   }
 }
 
@@ -1059,30 +1185,41 @@ header {
     height: 8px !important;
     width: 29px !important;
   }
-  .card{
-    width: 200px !important;
-    height: 350px !important;
-  } 
-  .card__img{
-    height: 200px !important;
+  .next__populars {
+    top: 100px !important;
   }
-  .card__name{
+  .prev__populars {
+    top: 100px !important;
+  }
+
+  .card {
+    width: 150px !important;
+    height: 330px !important;
+    position: relative;
+  }
+  .card > img {
+    height: 150px !important;
+  }
+  .card__title {
     font-size: 12px;
   }
-  .star{
+  .card__rating {
+    font-size: 12px;
+  }
+  .card__credit {
     font-size: 10px;
   }
-  .step__pay{
-    font-size: 10px;
+  .card__bottom > span {
+    font-size: 12px;
   }
-  .card__bottom>span{
-    font-size: 15px;
+  .swiper-button-next {
+    display: none !important;
   }
-  .next__populars{
-    top: 100px !important;
+  .swiper-button-prev {
+    display: none !important;
   }
-  .prev__populars{
-    top: 100px !important;
+  .new__card > img {
+    height: 200px;
   }
 }
 /* 340px, 768px, 1025px */

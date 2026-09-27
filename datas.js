@@ -1,3 +1,143 @@
+export const newProds = [
+  {
+    id: 10,
+    name: "Xiaomi Mijia Capsule Coffee Machine EU",
+    category: "Kofe mashinalari",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "120 346 so'mdan / 24 oy",
+    price: "1 699 000 so'm"
+  },
+  {
+    id: 11,
+    name: "LG 75QNED70B6A Smart televizori",
+    category: "Televizor",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "1 289 096 so'mdan / 24 oy",
+    price: "18 199 000 so'm"
+  },
+  {
+    id: 12,
+    name: "Xiaomi Portable Blender GL stasionar blenderi",
+    category: "Muzlatgichlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "31 805 so'mdan / 24 oy",
+    price: "449 000 so'm"
+  },
+  {
+    id: 13,
+    name: "DeLonghi KB12001.S elektr choynagi",
+    category: "Choynaklar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "58 013 so'mdan / 24 oy",
+    price: "819 000 so'm"
+  },
+  {
+    id: 14,
+    name: "Кофеварка Рожковая DeLonghi EC685.W",
+    category: "Kofe mashinalari",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "113 263 so'mdan / 24 oy",
+    price: "1 599 000 so'm"
+  },
+  {
+    id: 15,
+    name: "Nutribullet NBA0811DG aerogrill",
+    category: "Chanyutgichlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "77 846 so'mdan / 24 oy",
+    price: "1 099 000 so'm"
+  },
+  {
+    id: 16,
+    name: "Braun CG50101GY grill",
+    category: "Grillar",
+    discount: "50+0+2",
+    reviews: 4,
+    installment: "56 596 so'mdan / 24 oy",
+    price: "799 000 so'm"
+  },
+  {
+    id: 17,
+    name: "Braun JB1051BK stasionar blender",
+    category: "Muzlatgichlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "40 305 so'mdan / 24 oy",
+    price: "569 000 so'm"
+  },
+  {
+    id: 18,
+    name: "Huawei nova 16S 12/256GB Isle Blue",
+    category: "Smartfonlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "519 138 so'mdan / 24 oy",
+    price: "7 329 000 so'm"
+  },
+  {
+    id: 19,
+    name: "Huawei nova 16S Pro 12/256GB Isle Blue",
+    category: "Smartfonlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "602 013 so'mdan / 24 oy",
+    price: "8 499 000 so'm"
+  },
+  {
+    id: 20,
+    name: "Huawei Watch GT 7 smart soati 46mm Green Composite",
+    category: "Smart soatlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "226 596 so'mdan / 24 oy",
+    price: "3 199 000 so'm"
+  },
+  {
+    id: 21,
+    name: "Huawei nova 16S 12/256GB Sky White",
+    category: "Smartfonlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "519 138 so'mdan / 24 oy",
+    price: "7 329 000 so'm"
+  },
+  {
+    id: 22,
+    name: "Huawei nova 16S Pro 12/256GB Starry Black",
+    category: "Smartfonlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "602 013 so'mdan / 24 oy",
+    price: "8 499 000 so'm"
+  },
+  {
+    id: 23,
+    name: "Huawei Watch GT 7 smart soati 46mm Blue EasyCross",
+    category: "Smart soatlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "212 430 so'mdan / 24 oy",
+    price: "2 999 000 so'm"
+  },
+  {
+    id: 24,
+    name: "Huawei nova 16S 12/256GB Starry Black",
+    category: "Smartfonlar",
+    discount: "50+0+2",
+    reviews: 5,
+    installment: "519 138 so'mdan / 24 oy",
+    price: "7 329 000 so'm"
+  }
+];
+
+
+
 export const phones = [
   {
     id: 1,

@@ -14,11 +14,16 @@
 </head>
 
 <body>
+    <div class="horror__img display__off">
+        <img src="./images/Horror__img.webp" alt="">
+        <audio class="creepy__scream" src="./sounds/freesound_community-scary-scream-3-81274.mp3"></audio>
+    </div>
     <button class="chat">
         <div class="chat__box">
             <ul class="support__ul display__off">
                 <li><img src="https://texnomart.uz/_nuxt/img/pozvonit.7b8b618.svg" alt=""> Qo'ng'iroq qilmoq</li>
-                <li><img src="https://texnomart.uz/_nuxt/img/napisat_na_pochtu.5627e7e.svg" alt=""> Pochta xabar jo'natmoq</li>
+                <li><img src="https://texnomart.uz/_nuxt/img/napisat_na_pochtu.5627e7e.svg" alt=""> Pochta xabar
+                    jo'natmoq</li>
                 <li><img src="https://texnomart.uz/_nuxt/img/telegram.d3d87b7.svg" alt=""> Telegram</li>
             </ul>
         </div>
@@ -48,11 +53,27 @@
             </div>
         </div>
     </div>
+    <div class="added__cart-bg">
+        <div class="added__cart">
+            <div class="acart__close"><i class="fa-solid fa-xmark"></i></div>
+            <h1>Savatcha</h1>
+            <div class="acart__bottom">
+                <div class="left">
+                    <div class="acart__left-top">
+                        <input type="checkbox" class="checkbox__cart">
+                        <span class="choose__all">Hammasini tanlash</span>
+                        <button class="clear__selected">Tanlanganlarni o'chirish</button>
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="bottom__nav">
             <button><i class="fa-regular fa-house"></i>Bosh sahifa</button>
             <button><i class="fa-solid fa-bars"></i>Katalog</button>
-            <button><i class="fa-solid fa-cart-shopping"></i>Savatcha</button>
+            <button><i class="fa-solid fa-cart-shopping bottom__nav-cart"></i>Savatcha</button>
             <button><a href="https://texnomart.uz/naman/wishlist/" class="bottom__heart"><i
                         class="fa-regular fa-heart"></i>Sevimlilar</a></button>
             <button class="header__login-btn"><i class="fa-regular fa-user"></i>Kirish</button>
@@ -386,8 +407,19 @@
             <div class="swiper-wrapper card__wrap">
 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next card__next"></div>
+            <div class="swiper-button-prev card__prev"></div>
+        </section>
+        <section class="new__prods">
+            <h1 class="news__title">Yangi mahsulotlar</h1>
+            <div class="swiper-wrapper news__wrapper">
+
+            </div>
+            <div class="swiper-button-next new__next"></div>
+            <div class="swiper-button-prev new__prev"></div>
+        </section>
+        <section class="popular__brands">
+            
         </section>
     </main>
     <footer></footer>
