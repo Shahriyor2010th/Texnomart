@@ -6,8 +6,7 @@ let citiesListM2 = document.querySelector(".cities-listM2");
 let locationM1 = document.querySelector(".locationM1");
 let locationM2 = document.querySelector(".locationM2");
 
-let addedProducts = [];
-
+let addedProducts = JSON.parse(localStorage.getItem("products")) || [];
 
 locate.onclick = function () {
   citiesList.classList.toggle("display__off");
@@ -93,20 +92,136 @@ let shoppingCart = document.querySelector(".header__cart");
 let cartBG = document.querySelector(".cart__bg");
 let cartClose = document.querySelector(".cart__close");
 let bottomCart = document.querySelector(".bottom__nav-cart");
-let addedCart = document.querySelector(".added__cart-bg")
-shoppingCart.onclick = () => {
-  if (addedProducts.length == 0){
-    cartBG.classList.remove("display__off");
-  }
-  else{
+let pusrchaseList = document.querySelector(".purchase__list");
 
+let addedCart = document.querySelector(".added__cart-bg");
+let addedCartClose = document.querySelector(".acart__close");
+let checkAll = document.querySelector(".checkbox__cart");
+
+addedCartClose.onclick = () => {
+  addedCart.classList.toggle("display__off");
+};
+
+shoppingCart.onclick = () => {
+  pusrchaseList.innerHTML = "";
+  prodList();
+  if (addedProducts.length == 0) {
+    cartBG.classList.remove("display__off");
+  } else {
+    addedCart.classList.toggle("display__off");
   }
 };
 bottomCart.onclick = () => {
-  if (addedProducts.length == 0){
+  pusrchaseList.innerHTML = "";
+  prodList();
+  if (addedProducts.length == 0) {
     cartBG.classList.remove("display__off");
+  } else {
+    addedCart.classList.toggle("display__off");
   }
 };
+let immidPay = document.querySelector(".immid__pay");
+let creditPay = document.querySelector(".credit__pay");
+
+immidPay.onclick = () => {
+  immidPay.classList.add("white__bg");
+  creditPay.classList.remove("white__bg");
+};
+creditPay.onclick = () => {
+  immidPay.classList.remove("white__bg");
+  creditPay.classList.add("white__bg");
+};
+
+function prodList() {
+  let checkCount = addedProducts.length;
+  addedProducts.forEach((item) => {
+    let card = document.createElement("div");
+    let count = 0;
+    let totalPrice = 0;
+
+    // card.classList.add(".purchase__card")
+
+    card.innerHTML = `
+      <input type="checkbox" checked class="cart__item-check">
+      <img src="./images/card__img${item.id}.webp" width="108" height="108">
+      <div>
+      <h3>${item.name}</h3>
+      <div class="countbox">
+      <button class="increase">+</button>
+      <span class="count__div">${count}</span>
+      <button class="decrease">-</button>
+      </div>
+      <p>${item.price} so'm</p>
+      <div class="button__box">
+        <button class="cart__heart"><i class="fa-regular fa-heart"></i></button>
+        <button class="delete"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+      </div>
+    `;
+
+    pusrchaseList.append(card);
+    card.classList.add("purchase__card");
+
+    let increase = card.querySelector(".increase");
+    let decrease = card.querySelector(".decrease");
+    let countDiv = card.querySelector(".count__div");
+    let delet = card.querySelector(".delete");
+    let check = card.querySelector(".cart__item-check");
+    check.checked = true;
+
+    delet.onclick = () => {
+      card.remove();
+      addedProducts = addedProducts.filter((element) => item.id !== element.id);
+      localStorage.setItem("products", JSON.stringify(addedProducts));
+
+      if (addedProducts.length == 0) {
+        addedCart.classList.toggle("display__off");
+        cartBG.classList.toggle("display__off");
+      } else if (addedProducts.length > 2) {
+        pusrchaseList.classList.add("purchase__list2");
+      } else {
+        pusrchaseList.classList.remove("purchase__list2");
+      }
+    };
+    increase.onclick = () => {
+      count = count + 1;
+      countDiv.textContent = count;
+    };
+    decrease.onclick = () => {
+      if (count > 0) {
+        count = count - 1;
+        countDiv.textContent = count;
+      }
+    };
+    checkAll.checked = true;
+
+    check.onchange = () => {
+      if (check.checked == true) {
+        checkCount++;
+      } else if (checkCount > 0 && check.checked == false) {
+        checkCount--;
+      }
+      if (checkCount == addedProducts.length) {
+        checkAll.checked = true;
+      } else if (checkCount < addedProducts.length) {
+        checkAll.checked = false;
+      }
+    };
+  });
+}
+
+checkAll.onchange = () => {
+  if (checkAll.checked == true) {
+    pusrchaseList.innerHTML = "";
+    prodList();
+  }
+};
+
+if (addedProducts.length > 2) {
+  pusrchaseList.classList.add("purchase__list2");
+} else {
+  pusrchaseList.classList.remove("purchase__list2");
+}
 
 cartClose.onclick = () => {
   cartBG.classList.add("display__off");
@@ -176,14 +291,13 @@ var swiper = new Swiper(".populars", {
   },
 });
 
-
 let cardWrapper = document.querySelector(".card__wrap");
 
 import { phones } from "./datas.js";
 
 function addPhone() {
   cardWrapper.replaceChildren();
-  phones.forEach((item, index) => {
+  phones.forEach((item) => {
     let box = document.createElement("div");
 
     let rating = "";
@@ -194,7 +308,7 @@ function addPhone() {
     }
 
     box.innerHTML = `
-      <img src="./images/card__img${index}.webp" width="220" height="230">
+      <img src="./images/card__img${item.id}.webp" width="220" height="230">
       <div class="card__info">
         <h2 class="card__title">${item.name}</h2>
         <p class="card__rating">${rating}</p>
@@ -213,7 +327,14 @@ function addPhone() {
     btn.onclick = () => {
       if (!addedProducts.find((item2) => item.id == item2.id)) {
         addedProducts.push(item);
-        console.log(addedProducts);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
       }
     };
 
@@ -303,7 +424,12 @@ function renderNews() {
     btn.onclick = () => {
       if (!addedProducts.find((item2) => item.id == item2.id)) {
         addedProducts.push(item);
-        console.log(addedProducts);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+      } else if (addedProducts.length > 2) {
+        pusrchaseList.classList.add("purchase__list2");
+      } else {
+        pusrchaseList.classList.remove("purchase__list2");
       }
     };
 
@@ -336,112 +462,199 @@ function renderNews() {
 
 renderNews();
 
-// let cardWrap = document.querySelector(".card__wrap");
+import { brandImages } from "./datas.js";
+let brandsWrapper = document.querySelector(".brands__swiper");
 
-// import { products } from "./datas.js";
+function renderBrands() {
+  brandImages.forEach((item) => {
+    let card = document.createElement("div");
 
-// products.forEach((item, index) => {
-//   // let ind = index
+    card.innerHTML = `
+      <img src="${item}" alt="">
+    `;
+    brandsWrapper.append(card);
+    card.classList.add("swiper-slide");
+    card.classList.add("brand__box");
+  });
+  var brandsSwiper = new Swiper(".popular__brands", {
+    slidesPerView: 8.5,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-//   let card = document.createElement("div");
-//   let rating = "";
-//   if (item.review == 0) {
-//     rating += `🩶 Sharq yo'q`;
-//   } else {
-//     rating += `❤️ ${item.review} ta sharq`;
-//   }
-//   card.innerHTML = `
-//     <img src="./images/card__img${index}.webp" alt="" class="card__img">
-//     <div class="card__info">
-//     <h3 class="card__name">${item.name}</h3>
-//     <span class="star">${rating}</span>
-//     <p class="step__pay">${item.installment}</p>
-//     <div class="card__bottom">
-//       <span>${item.price}</span>
-//       <button class="add__to-cart">🛒</button>
-//     </div>
-//     </div>
-//   `;
-//   card.classList.add("card");
-//   card.classList.add("swiper-slide");
-//   cardWrap.append(card);
-// });
+    breakpoints: {
+      1026: {
+        slidesPerView: 8.5,
+      },
+      769: {
+        slidesPerView: 6.2,
+      },
+      341: {
+        slidesPerView: 4.6,
+      },
+      1: {
+        slidesPerView: 1.6,
+      },
+    },
+  });
+}
 
-// var swiper__cards = new Swiper(".card__wrapper", {
-//   slidesPerView: 4.3,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     1026: {
-//       slidesPerView: 4.3,
-//     },
-//     769: {
-//       slidesPerView: 3.4,
-//     },
-//     341: {
-//       slidesPerView: 2.5,
-//     },
-//     1: {
-//       slidesPerView: 1.55,
-//     },
-//   },
-// });
+renderBrands();
 
-//
+import { stock__buttons } from "./datas.js";
+let stockCat = document.querySelector(".stock__cat");
 
-// let addCart = document.querySelectorAll(".add__to-cart");
+function renderStockCat() {
+  stock__buttons.forEach((item, index) => {
+    let btnCat = document.createElement("button");
 
-// let TVsIn = document.querySelector(".TVs");
+    btnCat.textContent = item;
+    btnCat.classList.add("btn__cat");
+    btnCat.classList.add("swiper-slide");
+    btnCat.classList.add(`btn__cat${index}`);
+    stockCat.append(btnCat);
+  });
 
-// import { TVs } from "./datas.js";
+  var stocksSwiper = new Swiper(".stocks__middle", {
+    slidesPerView: 8.5,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-// let smartphones = document.querySelector(".smartphones");
+    breakpoints: {
+      1026: {
+        slidesPerView: 8.5,
+      },
+      769: {
+        slidesPerView: 6.2,
+      },
+      341: {
+        slidesPerView: 4.6,
+      },
+      1: {
+        slidesPerView: 1.6,
+      },
+    },
+  });
+}
 
-// TVsIn.onclick = TVprods;
+renderStockCat();
 
-// function TVprods() {
-//   cardWrap.innerHTML = "";
-//   smartphones.classList.remove("selected");
-//   TVsIn.classList.add("selected");
+import { stocks } from "./datas.js";
+let stockProds = document.querySelector(".stock__prods");
 
-//   TVs.forEach((item, index) => {
-//     let card = document.createElement("div");
-//     let rating = "";
-//     if (item.review == 0 || item.reviews !== undefined) {
-//       rating += `🩶 Sharq yo'q`;
-//     } else {
-//       rating += `❤️ ${item.review} ta sharq`;
-//     }
-//     card.innerHTML = `
-//     <img src="./images/card_img${item.id}.webp" alt="" class="card__img card__TV"></img>
-//     <div class="card__info">
-//     <h3 class="card__name">${item.name}</h3>
-//     <span class="star">${rating}</span>
-//     <p class="step__pay">${item.installment} so'mdan / 18oy</p>
-//     <div class="card__bottom">
-//       <span>${item.price} so'm</span>
-//       <button class="add__to-cart">🛒</button>
-//     </div>
-//     </div>
-//   `;
+function renderStocks() {
+  stocks.forEach((item) => {
+    let card = document.createElement("div");
 
-//     console.log(card);
-//     card.classList.add("card");
-//     cardWrap.append(card);
-//     console.log(cardWrap);
-//     swiper__cards.slideTo(0);
-//     swiper__cards.params.loop = true;
-//     swiper__cards.update();
-//   });
-// }
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+    card.innerHTML = `
+    <img src="./images/card__img${item.id}.webp" alt="" class="card__img">
+    <div class="card__info">
+    <h3 class="card__name">${item.name}</h3>
+    <span class="star">${rating}</span>
+    <p class="step__pay">${item.installment}</p>
+    <div class="card__bottom">
+      <span>${item.price}</span>
+      <button  class="add__to-cart">🛒</button>
+    </div>
+    </div>
+  `;
 
-// addCart.onclick =  ()=>{
-//   if (addCart.textContent == "🛒"){
-//     addCart.textContent = "✅"
-//   }
-//   else if (addCart.textContent == "✅"){
-//     addCart.textContent = "🛒"
-//   }
-// }
+    stockProds.append(card);
+    card.classList.add("swiper-slide");
+    card.classList.add("stock__card");
+
+    let btn = card.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+      } else if (addedProducts.length > 2) {
+        pusrchaseList.classList.add("purchase__list2");
+      } else {
+        pusrchaseList.classList.remove("purchase__list2");
+      }
+    };
+  });
+
+  var stockSwiper = new Swiper(".stocks__bottom", {
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.5,
+      },
+      769: {
+        slidesPerView: 3.2,
+      },
+      341: {
+        slidesPerView: 2.71,
+      },
+      1: {
+        slidesPerView: 1.6,
+      },
+    },
+  });
+}
+
+renderStocks();
+
+import { news } from "./datas.js";
+let newsWrapper = document.querySelector(".news__wrapper2")
+
+function rendNews(){
+  news.forEach((item) => {
+    let card = document.createElement("div");
+
+    card.innerHTML = `
+      <img src="${item.src}" alt="">
+      <p class="date">${item.description}</p>
+      <h4 class="new__title">${item.name}</h4>
+    `;
+
+    console.log(card);
+    
+
+    card.classList.add("swiper-slide");
+    card.classList.add("news__card");
+    newsWrapper.append(card)
+  });
+
+  var newsSwiper = new Swiper(".news", {
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.5,
+      },
+      769: {
+        slidesPerView: 3.9,
+      },
+      341: {
+        slidesPerView: 2.9,
+      },
+      1: {
+        slidesPerView: 1.6,
+      },
+    },
+  });
+}
+
+rendNews()
+
