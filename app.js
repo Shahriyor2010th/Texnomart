@@ -255,7 +255,7 @@ var swiper = new Swiper(".catalogue", {
   },
   breakpoints: {
     1026: {
-      slidesPerView: 6.3,
+      slidesPerView: 7.1,
     },
     769: {
       slidesPerView: 5.2,
@@ -277,7 +277,7 @@ var swiper = new Swiper(".populars", {
   },
   breakpoints: {
     1026: {
-      slidesPerView: 9.2,
+      slidesPerView: 10.2,
     },
     769: {
       slidesPerView: 7.3,
@@ -294,6 +294,37 @@ var swiper = new Swiper(".populars", {
 let cardWrapper = document.querySelector(".card__wrap");
 
 import { phones } from "./datas.js";
+
+
+
+
+
+let rendTVS = document.querySelector(".TVs")
+let rendPhones = document.querySelector(".smartphones")
+let rendTablet = document.querySelector(".tablets")
+let rendLaun = document.querySelector(".laundry__machines")
+let rendAir = document.querySelector(".air__con")
+let rendFridge = document.querySelector(".fridge")
+let rendVac = document.querySelector(".vacuums")
+let rendLap = document.querySelector(".laptop")
+let rendCoffee = document.querySelector(".coffee__maker")
+let rendHair = document.querySelector(".hair__drier")
+
+
+
+
+let renarr = [rendTVS, rendAir, rendCoffee, rendFridge, rendHair, rendLap, rendLaun, rendPhones, rendTablet, rendVac]; 
+
+function nonSelect(){
+  renarr.map((item)=>{
+    item.classList.remove("selected")
+  })
+}
+
+
+
+
+
 
 function addPhone() {
   cardWrapper.replaceChildren();
@@ -314,7 +345,7 @@ function addPhone() {
         <p class="card__rating">${rating}</p>
         <p class="card__credit">${item.installment}</p>
         <div class="card__bottom">
-          <span>${item.price}</span>
+          <span>${item.price} so'm</span>
           <button id="add__cart">🛒</button>
         </div>
 
@@ -367,8 +398,727 @@ function addPhone() {
 
 addPhone();
 
-let smartphones = document.querySelector(".smartphones");
-smartphones.onclick = addPhone;
+rendPhones.onclick = ()=>{
+  nonSelect()
+  rendPhones.classList.add("selected")
+  addPhone()
+}
+
+
+
+
+
+
+
+
+import { TVs } from "./datas.js";
+
+function addTVs() {
+  cardWrapper.replaceChildren();
+  TVs.forEach((item) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="./images/card__img${item.id}.webp" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price} so'm</span>
+          <button id="add__cart">🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
+      }
+    };
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 10,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
+  });
+  
+}
+
+
+rendTVS.onclick = ()=>{
+  nonSelect()
+  rendTVS.classList.add("selected")
+  addTVs()
+};
+
+
+
+
+
+
+
+
+import { kirYuvishMashinasi } from "./datas.js";
+
+function addLaun() {
+  cardWrapper.replaceChildren();
+  kirYuvishMashinasi.forEach((item) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="${item.image}" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price} so'm</span>
+          <button id="add__cart">🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
+      }
+    };
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
+  });
+}
+
+
+rendLaun.onclick = ()=>{
+  nonSelect()
+  rendLaun.classList.add("selected")
+  addLaun()
+};
+
+
+
+
+
+
+
+
+
+
+
+
+import { planshetlar } from "./datas.js";
+
+function addTablet() {
+  cardWrapper.replaceChildren();
+  planshetlar.forEach((item) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="${item.src}" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price} so'm</span>
+          <button id="add__cart">🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
+      }
+    };
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
+  });
+}
+
+
+rendTablet.onclick = ()=>{
+  nonSelect()
+  rendTablet.classList.add("selected")
+  addTablet()
+};
+
+
+
+
+
+
+
+
+import { changyutgichlar } from "./datas.js";
+
+function addVacs() {
+  cardWrapper.replaceChildren();
+  changyutgichlar.forEach((item) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="${item.src}" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price} so'm</span>
+          <button id="add__cart">🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
+      }
+    };
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
+  });
+}
+
+
+rendVac.onclick = ()=>{
+  nonSelect()
+  rendVac.classList.add("selected")
+  addVacs()
+};
+
+
+
+
+
+
+
+
+
+import { muzlatgichlar } from "./datas.js";
+
+function addFridges() {
+  cardWrapper.replaceChildren();
+  muzlatgichlar.forEach((item) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="${item.image}" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price} so'm</span>
+          <button id="add__cart">🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
+      }
+    };
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
+  });
+}
+
+
+rendFridge.onclick = ()=>{
+  nonSelect()
+  rendFridge.classList.add("selected")
+  addFridges()
+};
+
+
+
+
+
+
+
+
+
+import { konditsionerlar } from "./datas.js";
+
+function addAir() {
+  cardWrapper.replaceChildren();
+  konditsionerlar.forEach((item) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="${item.image}" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price} so'm</span>
+          <button id="add__cart">🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
+      }
+    };
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
+  });
+}
+
+
+rendAir.onclick = ()=>{
+  nonSelect()
+  rendAir.classList.add("selected")
+  addAir()
+};
+
+
+
+
+
+
+import { qahvaMoshinalari } from "./datas.js";
+
+function addCof() {
+  cardWrapper.replaceChildren();
+  qahvaMoshinalari.forEach((item) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="${item.image}" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price} so'm</span>
+          <button id="add__cart">🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
+      }
+    };
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
+  });
+}
+
+
+rendCoffee.onclick = ()=>{
+  nonSelect()
+  rendCoffee.classList.add("selected")
+  addCof()
+};
+
+
+
+
+
+
+import { sochQuritgichlar } from "./datas.js";
+
+function addHair() {
+  cardWrapper.replaceChildren();
+  sochQuritgichlar.forEach((item) => {
+    let box = document.createElement("div");
+
+    let rating = "";
+    if (item.reviews == 0) {
+      rating += `🩶 Sharq yo'q`;
+    } else {
+      rating += `❤️ ${item.reviews} ta sharq`;
+    }
+
+    box.innerHTML = `
+      <img src="${item.image}" width="220" height="230">
+      <div class="card__info">
+        <h2 class="card__title">${item.name}</h2>
+        <p class="card__rating">${rating}</p>
+        <p class="card__credit">${item.installment}</p>
+        <div class="card__bottom">
+          <span>${item.price} so'm</span>
+          <button id="add__cart">🛒</button>
+        </div>
+
+      </div>
+
+    `;
+
+    let btn = box.querySelector("button");
+
+    btn.onclick = () => {
+      if (!addedProducts.find((item2) => item.id == item2.id)) {
+        addedProducts.push(item);
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+
+        if (addedProducts.length > 2) {
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
+      }
+    };
+
+    box.classList.add("swiper-slide");
+    box.classList.add("card");
+    cardWrapper.append(box);
+  });
+  var phones__wrapper = new Swiper(".card__wrapper", {
+    slidesPerView: 4.2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1026: {
+        slidesPerView: 4.3,
+      },
+      769: {
+        slidesPerView: 3.4,
+      },
+      341: {
+        slidesPerView: 2.5,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    },
+  });
+}
+
+
+rendHair.onclick = ()=>{
+  nonSelect()
+  rendHair.classList.add("selected")
+  addHair()
+}
+
+
+rendLap.onclick = ()=>{
+  cardWrapper.innerHTML=""
+  nonSelect()
+  rendLap.classList.add("selected")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let chat = document.querySelector(".chat");
 let chatBox = document.querySelector(".chat__box");
@@ -577,13 +1327,15 @@ function renderStocks() {
     btn.onclick = () => {
       if (!addedProducts.find((item2) => item.id == item2.id)) {
         addedProducts.push(item);
-        prodList();
-        localStorage.setItem("products", JSON.stringify(addedProducts));
-      } else if (addedProducts.length > 2) {
+        if (addedProducts.length > 2) {
         pusrchaseList.classList.add("purchase__list2");
-      } else {
+      } 
+      else {
         pusrchaseList.classList.remove("purchase__list2");
       }
+        prodList();
+        localStorage.setItem("products", JSON.stringify(addedProducts));
+      } 
     };
   });
 
@@ -624,8 +1376,6 @@ function rendNews(){
       <p class="date">${item.description}</p>
       <h4 class="new__title">${item.name}</h4>
     `;
-
-    console.log(card);
     
 
     card.classList.add("swiper-slide");
@@ -658,3 +1408,43 @@ function rendNews(){
 
 rendNews()
 
+
+
+import { allprods } from "./datas.js";
+
+let allProds = allprods.flat(Infinity)
+let selectedSearch = document.querySelector(".selected__search")
+let Input__search = document.getElementById("serch")
+let searchBox = document.querySelector(".search__box")
+console.log(allProds);
+
+
+Input__search.oninput = (e)=>{
+  searchBox.classList.remove("display__off")
+  searchBox.innerHTML = ""
+  let value = e.target.value
+  let image = ""
+
+
+
+  allProds.forEach((item)=>{
+    if (item.name.toLowerCase().includes(value.toLowerCase())){
+      let box = document.createElement("div")
+
+      box.innerHTML = `
+        
+        <p>${item.name}</p>
+      `
+      box.classList.add("search__item")
+      searchBox.append(box)
+
+      
+    }
+  })
+
+  if(value.length == 0){
+    searchBox.innerHTML =""
+    searchBox.classList.add("display__off")
+  }
+  
+}

@@ -235,11 +235,16 @@
             <div class="header-bottom">
                 <div class="header__b-logo"><a href="./index.html">texnomart*</a></div>
                 <button class="header__catalog"><i class="fa-solid fa-bars"></i>Katalog</button>
-                <div class="header__search">
-                    <input type="text" class="search__input" placeholder="Qidirish">
-                    <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <div class="selected__search">
+                    <div class="header__search">
+                        <input type="text" class="search__input" placeholder="Qidirish" id="serch">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="search__box display__off">
+                        
+                    </div>
                 </div>
                 <ul class="header__buttonbox">
                     <li><button class="header__login-btn header__login-origin"><i
@@ -292,8 +297,8 @@
                 <div class="swiper-slide"><a href="https://texnomart.uz/promotions/bystraia-dostavka/"><img
                             src="./images/swiper12-img.webp" alt=""></a></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next banner__next"></div>
+            <div class="swiper-button-prev banner__prev"></div>
         </div>
         <section class="catalogue">
             <div class="swiper-wrapper">
@@ -385,28 +390,28 @@
                 <button class="swiper-slide populars__item TVs">
                     Televizorlar
                 </button>
-                <button class="swiper-slide populars__item">
+                <button class="swiper-slide populars__item tablets">
                     Planshetlar
                 </button>
-                <button class="swiper-slide populars__item">
+                <button class="swiper-slide populars__item laundry__machines">
                     Kir yuvish mashinalari
                 </button>
-                <button class="swiper-slide populars__item">
+                <button class="swiper-slide populars__item air__con">
                     Konditsionerlar
                 </button>
-                <button class="swiper-slide populars__item">
+                <button class="swiper-slide populars__item fridge">
                     Muzlatgichlar
                 </button>
-                <button class="swiper-slide populars__item">
+                <button class="swiper-slide populars__item vacuums">
                     Changyutgichlar
                 </button>
-                <button class="swiper-slide populars__item">
+                <button class="swiper-slide populars__item laptop">
                     Noutbuklar
                 </button>
-                <button class="swiper-slide populars__item">
+                <button class="swiper-slide populars__item coffee__maker">
                     Qahva mashinalari
                 </button>
-                <button class="swiper-slide populars__item">
+                <button class="swiper-slide populars__item hair__drier">
                     Soch quritgichlar
                 </button>
 
@@ -434,8 +439,8 @@
             <div class="swiper-wrapper brands__swiper">
 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next brands__next"></div>
+            <div class="swiper-button-prev brands__prev"></div>
         </section>
         <section class="stocks">
             <div class="stocks__top">
@@ -446,15 +451,15 @@
                 <div class="swiper-wrapper stock__cat">
 
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next stock__cat-next"></div>
+                <div class="swiper-button-prev stock__cat-next"></div>
             </div>
             <div class="stocks__bottom">
                 <div class="swiper-wrapper stock__prods">
 
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next stock__prods-next"></div>
+                <div class="swiper-button-prev stock__prods-next"></div>
             </div>
         </section>
         <section class="news">
@@ -462,8 +467,8 @@
             <div class="swiper-wrapper news__wrapper2">
 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next news__next"></div>
+            <div class="swiper-button-prev news__next"></div>
         </section>
         <section class="app">
             <div class="left">
@@ -647,7 +652,7 @@
         </div>
         <div class="line"></div>
         <div class="footer2__bottom">
-            <p>2016-2026 © texnomart.uz. Barcha huquqlar himoyalangan. Tovarlarning ko'rsatilgan qiymati va ularni 
+            <p>2016-2026 © texnomart.uz. Barcha huquqlar himoyalangan. Tovarlarning ko'rsatilgan qiymati va ularni
                 sotib olish shartlari joriy sanaga amal qiladi</p>
             <h4>Quyidagi to'lovlarni qabul qilamiz</h4>
             <div class="payment__wrap2">
