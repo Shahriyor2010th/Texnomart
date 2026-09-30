@@ -6,7 +6,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "120 346 so'mdan / 24 oy",
-    price: 1699000
+    price: 1699000,
+    src: "./images/card__img10.webp",
   },
   {
     id: 11,
@@ -15,7 +16,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "1 289 096 so'mdan / 24 oy",
-    price: 18199000
+    price: 18199000,
+    src: "./images/card__img11.webp",
   },
   {
     id: 12,
@@ -24,7 +26,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "31 805 so'mdan / 24 oy",
-    price: 449000
+    price: 449000,
+    src: "./images/card__img12.webp",
   },
   {
     id: 13,
@@ -33,7 +36,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "58 013 so'mdan / 24 oy",
-    price: 819000
+    price: 819000,
+    src: "./images/card__img13.webp",
   },
   {
     id: 14,
@@ -42,7 +46,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "113 263 so'mdan / 24 oy",
-    price: 1599000
+    price: 1599000,
+    src: "./images/card__img14.webp",
   },
   {
     id: 15,
@@ -51,7 +56,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "77 846 so'mdan / 24 oy",
-    price: 1099000
+    price: 1099000,
+    src: "./images/card__img15.webp",
   },
   {
     id: 16,
@@ -60,7 +66,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 4,
     installment: "56 596 so'mdan / 24 oy",
-    price: 799000
+    price: 799000,
+    src: "./images/card__img16.webp",
   },
   {
     id: 17,
@@ -69,7 +76,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "40 305 so'mdan / 24 oy",
-    price: 569000
+    price: 569000,
+    src: "./images/card__img17.webp",
   },
   {
     id: 18,
@@ -78,7 +86,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "519 138 so'mdan / 24 oy",
-    price: 7329000
+    price: 7329000,
+    src: "./images/card__img18.webp",
   },
   {
     id: 19,
@@ -87,7 +96,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "602 013 so'mdan / 24 oy",
-    price: 8499000
+    price: 8499000,
+    src: "./images/card__img19.webp",
   },
   {
     id: 20,
@@ -96,7 +106,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "226 596 so'mdan / 24 oy",
-    price: 3199000
+    price: 3199000,
+    src: "./images/card__img20.webp",
   },
   {
     id: 21,
@@ -105,7 +116,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "519 138 so'mdan / 24 oy",
-    price: 7329000
+    price: 7329000,
+    src: "./images/card__img21.webp",
   },
   {
     id: 22,
@@ -114,7 +126,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "602 013 so'mdan / 24 oy",
-    price: 8499000
+    price: 8499000,
+    src: "./images/card__img22.webp",
   },
   {
     id: 23,
@@ -123,7 +136,8 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "212 430 so'mdan / 24 oy",
-    price: 2999000
+    price: 2999000,
+    src: "./images/card__img23.webp",
   },
   {
     id: 24,
@@ -132,8 +146,9 @@ export const newProds = [
     discount: "50+0+2",
     reviews: 5,
     installment: "519 138 so'mdan / 24 oy",
-    price: 7329000
-  }
+    price: 7329000,
+    src: "./images/card__img24.webp",
+  },
 ];
 
 export const phones = [
@@ -147,9 +162,9 @@ export const phones = [
     rating: null,
     installment: "564 750 so'mdan / 18 oy",
     price: 6777000,
-    badges: ["VIMEI"]
+    badges: ["VIMEI"],
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3597/359776/215516/90933bb7-6289-4458-a453-cc176d04bb33-medium.webp",
   },
-
   {
     id: 1,
     name: "Samsung Galaxy A57 8/256GB Dark Blue",
@@ -161,9 +176,9 @@ export const phones = [
     installment: "659 000 so'mdan / 18 oy",
     price: 7908000,
     badges: ["VIMEI", "Kafolat 1 yil"],
-    protection: "IP68"
+    protection: "IP68",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3595/359559/214717/8a12f5d6-38a3-41a6-8c90-15a8a1d69984-medium.webp",
   },
-
   {
     id: 2,
     name: "Samsung Galaxy A27 5G 8/256GB",
@@ -175,9 +190,9 @@ export const phones = [
     installment: "356 417 so'mdan / 18 oy",
     price: 4277000,
     badges: ["VIMEI", "Kafolat 1 yil"],
-    protection: "IP64"
+    protection: "IP64",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3599/359939/215953/f6a5d553-75aa-423b-94d2-29a0a606a4d8-medium.webp",
   },
-
   {
     id: 3,
     name: "Samsung Galaxy S26 Ultra 12/256GB",
@@ -188,9 +203,9 @@ export const phones = [
     installment: "1 305 750 so'mdan / 18 oy",
     price: 15669000,
     badges: ["VIMEI", "Kafolat 1 yil"],
-    protection: "IP68"
+    protection: "IP68",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3595/359501/214419/8e6c7f25-3b4d-421b-b42e-0dc6e8a27766-medium.webp",
   },
-
   {
     id: 4,
     name: "OPPO Reno15 F 5G 8/256GB Twilight Blue",
@@ -202,9 +217,9 @@ export const phones = [
     rating: null,
     installment: "583 250 so'mdan / 18 oy",
     price: 6999000,
-    badges: ["VIMEI"]
+    badges: ["VIMEI"],
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3594/359445/214139/0fdf9bba-d9f4-4172-a813-6cf894681fab-medium.webp",
   },
-
   {
     id: 5,
     name: "OPPO A6 Pro 8/256GB Lunar Titanium",
@@ -215,8 +230,9 @@ export const phones = [
     rating: null,
     installment: "449 917 so'mdan / 18 oy",
     price: 5399000,
-    badges: ["VIMEI"]
-  }
+    badges: ["VIMEI"],
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3591/359131/213033/98a7c564-7fc3-48c2-a407-f8d7b3e81d2e-medium.webp",
+  },
 ];
 
 export const TVs = [
@@ -228,7 +244,8 @@ export const TVs = [
     reviews: 0,
     installment: "637 500 so'm / 24oy",
     months: 18,
-    price: 9000000
+    price: 9000000,
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3583/358390/209527/ff121a37-2244-4a5a-a7bb-ddf74cd06c39-medium.webp",
   },
   {
     id: 8,
@@ -238,7 +255,8 @@ export const TVs = [
     reviews: 0,
     installment: "282 484 so'm / 24oy",
     months: 18,
-    price: 3988000
+    price: 3988000,
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3594/359419/214021/22dee92c-ee11-4e3e-8a6b-c7725632c4d2-medium.webp",
   },
   {
     id: 9,
@@ -248,38 +266,37 @@ export const TVs = [
     reviews: 0,
     installment: "1 030 980 so'm / 24oy",
     months: 18,
-    price: 14550000
-  }
+    price: 14550000,
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3598/359899/215859/1ac2ecdb-c6aa-4439-91db-b26e4302e608-medium.webp",
+  },
 ];
-
 
 export const brandImages = [
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/72/193da322-a1dd-40b6-9b4e-935463d2136f.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/71/db9c48fb-a175-4ff9-ab06-bd953ddc82cd-medium.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/80/dd3aeb98-802f-4ddd-9d07-c1abd4b1a482-medium.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/87/ad04313a-6046-4404-93f4-c0f64e57289d-medium.png",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/73/0de14ed5-3120-450b-86c4-4ae09607bd4d-medium.png",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/69/4b5041fa-546e-4472-8156-fa8e67556183-medium.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/96/a9acfae1-3152-4e14-a0b1-3012477425c3.svg",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/74/c53e8986-c05a-4af7-b5a6-adafe1f04bff.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/89/409cc1aa-92c8-403e-96fc-f0e3dc15da92-medium.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/90/21a7fcd7-6ca4-4cd3-ade4-499ad6c96660-medium.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/98/8c042d23-f94c-4462-b40c-2196e5798340.svg",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/95/f0903e26-bcb2-4c1e-9bcb-8f9380177cad-medium.png",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/75/cb377838-24b4-4c67-8efb-42f81678c320.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/78/5de3eafa-3056-457c-9a3d-1809c89456b9.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/85/b2eb3b33-9a84-4b37-80a4-421332d0c5fc-medium.png",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/82/21a6cb21-9bd1-4c03-80f0-ec9a32985113-medium.png",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/81/8541e646-2b8a-40aa-95e1-d4147930533a-medium.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/97/0df59c02-d38e-4099-a369-67aa3e4c857b.svg",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/84/2f4d6f16-a2af-45bc-9993-82a0320e0630-medium.png",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/86/bcb5b55f-1d8a-462e-8b82-da83da2c7e56.svg",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/100/59cc5dc6-3ffb-4152-851b-b399d531af7a.svg",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/93/2792adbb-db65-4295-a741-18c31c71b8ec-medium.webp",
-    "https://mini-io-api.texnomart.uz/catalog/special-brands/91/e3cc7a21-1549-4aa5-b9d2-ba885a129e67-medium.webp"
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/72/193da322-a1dd-40b6-9b4e-935463d2136f.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/71/db9c48fb-a175-4ff9-ab06-bd953ddc82cd-medium.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/80/dd3aeb98-802f-4ddd-9d07-c1abd4b1a482-medium.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/87/ad04313a-6046-4404-93f4-c0f64e57289d-medium.png",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/73/0de14ed5-3120-450b-86c4-4ae09607bd4d-medium.png",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/69/4b5041fa-546e-4472-8156-fa8e67556183-medium.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/96/a9acfae1-3152-4e14-a0b1-3012477425c3.svg",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/74/c53e8986-c05a-4af7-b5a6-adafe1f04bff.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/89/409cc1aa-92c8-403e-96fc-f0e3dc15da92-medium.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/90/21a7fcd7-6ca4-4cd3-ade4-499ad6c96660-medium.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/98/8c042d23-f94c-4462-b40c-2196e5798340.svg",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/95/f0903e26-bcb2-4c1e-9bcb-8f9380177cad-medium.png",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/75/cb377838-24b4-4c67-8efb-42f81678c320.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/78/5de3eafa-3056-457c-9a3d-1809c89456b9.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/85/b2eb3b33-9a84-4b37-80a4-421332d0c5fc-medium.png",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/82/21a6cb21-9bd1-4c03-80f0-ec9a32985113-medium.png",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/81/8541e646-2b8a-40aa-95e1-d4147930533a-medium.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/97/0df59c02-d38e-4099-a369-67aa3e4c857b.svg",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/84/2f4d6f16-a2af-45bc-9993-82a0320e0630-medium.png",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/86/bcb5b55f-1d8a-462e-8b82-da83da2c7e56.svg",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/100/59cc5dc6-3ffb-4152-851b-b399d531af7a.svg",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/93/2792adbb-db65-4295-a741-18c31c71b8ec-medium.webp",
+  "https://mini-io-api.texnomart.uz/catalog/special-brands/91/e3cc7a21-1549-4aa5-b9d2-ba885a129e67-medium.webp",
 ];
-
 
 export const stocks = [
   {
@@ -288,7 +305,8 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "21 180 so'mdan / 24 oy",
-    price: "299 000 so'm"
+    price: "299 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3560/356038/190955/32148972-7bca-457f-a7e9-fab81d2e97a4-medium.webp",
   },
   {
     id: 26,
@@ -296,7 +314,8 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "356 292 so'mdan / 24 oy",
-    price: "5 030 000 so'm"
+    price: "5 030 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3586/358628/210648/5352796c-b827-4924-867c-61d06700f9f2-medium.webp",
   },
   {
     id: 27,
@@ -304,7 +323,8 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "116 521 so'mdan / 24 oy",
-    price: "1 645 000 so'm"
+    price: "1 645 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3589/358972/212408/17777c56-9b32-461c-a057-d5d055ca3c8d-medium.webp",
   },
   {
     id: 28,
@@ -312,7 +332,8 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "42 430 so'mdan / 24 oy",
-    price: "599 000 so'm"
+    price: "599 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3586/358627/210642/77071199-b34a-4d7a-ab1d-21651e2b9f26-medium.webp",
   },
   {
     id: 29,
@@ -320,7 +341,8 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "205 417 so'mdan / 24 oy",
-    price: "2 900 000 so'm"
+    price: "2 900 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3591/359186/213239/dfeb63bd-1623-495d-80fb-9a394113ee45-medium.webp",
   },
   {
     id: 30,
@@ -328,7 +350,8 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "70 763 so'mdan / 24 oy",
-    price: "999 000 so'm"
+    price: "999 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3569/356996/205141/9af88b4c-d87f-4a0c-9a58-4b66ad79163f-medium.webp",
   },
   {
     id: 31,
@@ -336,7 +359,8 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "107 596 so'mdan / 24 oy",
-    price: "1 519 000 so'm"
+    price: "1 519 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3587/358719/211171/61bf1bb2-fc4f-450b-b934-006faa20812a-medium.webp",
   },
   {
     id: 32,
@@ -344,7 +368,8 @@ export const stocks = [
     discount: "0-0-9",
     reviews: 0,
     installment: "135 009 so'mdan / 24 oy",
-    price: "1 906 000 so'm"
+    price: "1 906 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3570/357032/205164/44af31f1-bb39-4bac-a1a5-19f423c0ed37-medium.webp",
   },
   {
     id: 33,
@@ -352,7 +377,8 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "580 834 so'mdan / 24 oy",
-    price: "8 200 000 so'm"
+    price: "8 200 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3569/356997/205142/ccaf1bfc-bcad-4a39-9eed-4ec2afe6527b-medium.webp",
   },
   {
     id: 34,
@@ -360,8 +386,9 @@ export const stocks = [
     discount: "50-0-2",
     reviews: 0,
     installment: "70 763 so'mdan / 24 oy",
-    price: "999 000 so'm"
-  }
+    price: "999 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3559/355913/205151/2711b954-2e24-40c1-8cb7-597cecfbd7b5-medium.webp",
+  },
 ];
 
 export const stock__buttons = [
@@ -374,146 +401,142 @@ export const stock__buttons = [
   "Changyutgichlar",
   "Noutbuklar",
   "Qahva mashinalar",
-  "Soch quritgichlar"
+  "Soch quritgichlar",
 ];
-
 
 export const news = [
   {
     id: 35,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/Em17bmyTSC385bKfhN1D3AbkXXgpCq3Uyi5PtB4N.webp",
     name: "GTA VI: Anons, reliz sanasi",
-    description: "21 Avgust 2026, 16:30"
+    description: "21 Avgust 2026, 16:30",
   },
   {
     id: 36,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/114/3fpp9CzxP8pnIy4qDlwS4ZiR1UPCz4Hrqi4WcZTc.webp",
     name: "Pultsiz konditsionerni qanday yoqish mumkin",
-    description: "08 Iyun 2026, 11:35"
+    description: "08 Iyun 2026, 11:35",
   },
   {
     id: 37,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/rKwJRCAty3IQ28PcN3BC45pCxClmfyIbw2VNKr43.webp",
     name: "Muzlatgichni qanday tanlash kerak",
-    description: "22 Sentabr 2026, 15:30"
+    description: "22 Sentabr 2026, 15:30",
   },
   {
     id: 38,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/K3nrLzkY6gQDd51eJ4OfHYq0AktyGI5F5BN3UY87.webp",
     name: "Uy uchun dazmolni qanday tanlash kerak: quvvat, bug‘ va taglik",
-    description: "17 Sentabr 2026, 17:46"
+    description: "17 Sentabr 2026, 17:46",
   },
   {
     id: 39,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/7u1VCf0FEHC3r00YqrQFLhDXVlwwbE9D4NBWh26n.webp",
     name: "Elektr go‘shtqiymalagichdan qanday foydalanish kerak",
-    description: "11 Sentabr 2026, 22:00"
+    description: "11 Sentabr 2026, 22:00",
   },
   {
     id: 40,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/6gFGqkklUou3zO3uRyZRnVXTCsklebz1iGAjJ5L6.webp",
     name: "Qaysi biri yaxshiroq: robot changyutgichmi yoki simsiz model?",
-    description: "07 Sentabr 2026, 17:25"
+    description: "07 Sentabr 2026, 17:25",
   },
   {
     id: 41,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/0lhUbBMAeypXdAnR9gJJHxXLIldy3T8QqPU2tqfW.webp",
     name: "Suv isitgichni qanday tanlash kerak",
-    description: "01 Sentabr 2026, 12:29"
+    description: "01 Sentabr 2026, 12:29",
   },
   {
     id: 42,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/tgUNPRLU1iPdJrNljQRGTuPwb0znRnj104MnSWK9.webp",
     name: "Non pechini qanday tanlash kerak",
-    description: "25 Avgust 2026, 15:25"
+    description: "25 Avgust 2026, 15:25",
   },
   {
     id: 43,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/3S94JPPTKXI3EKsDZHrcyhAFLIpl4p7AGmxhcpGr.webp",
     name: "Oshxonada qanday texnikalar bo‘lishi kerak?",
-    description: "28 Avgust 2026, 18:09"
+    description: "28 Avgust 2026, 18:09",
   },
   {
     id: 44,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/IVYDo0i3EVlFrl4jlF4oj0onass6K4VRGUq4DNBL.webp",
     name: "Blender yoki mikser: ularning farqi nimada?",
-    description: "25 Avgust 2026, 13:54"
+    description: "25 Avgust 2026, 13:54",
   },
   {
     id: 45,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/AxaiKVhwPI3xYLxDthqgPzyjf3KFGrZNhGd7L2Ez.webp",
     name: "O‘yin noutbukini qanday tanlash kerak",
-    description: "25 Avgust 2026, 09:31"
+    description: "25 Avgust 2026, 09:31",
   },
   {
     id: 46,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/Od4aJzNsW1QNTp8dF3wwPqlCN3zCc6C0b04yQgbn.webp",
     name: "Sochni fen bilan qanday to‘g‘rilash mumkin",
-    description: "24 Avgust 2026, 10:48"
+    description: "24 Avgust 2026, 10:48",
   },
   {
     id: 47,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/OgLfpWXzgyg2KKXouqFyArqGA9TNHdNWM92DGxGo.webp",
     name: "Uy uchun sharbat siqqichni qanday tanlash kerak",
-    description: "18 Avgust 2026, 10:55"
+    description: "18 Avgust 2026, 10:55",
   },
   {
     id: 48,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/L0ya6qBFLiLrOIp6U7IW82V3SINuEZFFCIClMgMC.webp",
     name: "Havo namlagichni qanday to‘g‘ri tozalash kerak",
-    description: "18 Avgust 2026, 14:34"
+    description: "18 Avgust 2026, 14:34",
   },
   {
     id: 49,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/OCBCYtfJcpDJiCg4OKn85kdnnzhqvHsogNfKPIwn.webp",
     name: "Uy uchun qahva maydalagichni qanday tanlash kerak",
-    description: "14 Avgust 2026, 06:10"
+    description: "14 Avgust 2026, 06:10",
   },
   {
     id: 50,
     src: "https://mini-io-api.texnomart.uz/newcontent/image/news/NCwSj1d8I3callNeXt86el1fFbCuGStaHczBKaMI.webp",
     name: "Changyutgichni qanday tanlash kerak",
-    description: "14 Avgust 2026, 08:10"
-  }
+    description: "14 Avgust 2026, 08:10",
+  },
 ];
-
 
 export const kirYuvishMashinasi = [
-    {
-        id: 61,
-        name: "LG F2T9GW9P Kir yuvish mashinasi",
-        reviews: 1,
-        installment: "652 425 so'mdan / 24 oy",
-        price: "8 699 000 so'm",
-        image: "https://mini-io-api.texnomart.uz/catalog/product/817/81771/198038/995d5d34-c77f-4d99-9f0b-3e47d504dcd4-medium.webp"
-    },
-    {
-        id: 62,
-        name: "Samsung WW11CB944CGHLD Kir yuvish mashinasi",
-        reviews: 0,
-        installment: "708 263 so'mdan / 24 oy",
-        price: "9 999 000 so'm",
-        image: "https://mini-io-api.texnomart.uz/catalog/product/3583/358386/209426/44b65e78-d197-489e-9eb3-1d66525a6a19-medium.webp"
-    },
-    {
-        id: 63,
-        name: "Kir yuvish mashinasi LG F4V3ES6S",
-        reviews: 0,
-        installment: "682 425 so'mdan / 24 oy",
-        price: "9 099 000 so'm",
-        image: "https://mini-io-api.texnomart.uz/catalog/product/3570/357042/204878/22c3de73-8413-47e9-a509-775f608152d0-medium.webp"
-    },
-    {
-        id: 64,
-        name: "Haier HW90-B14979 Kir yuvish mashinasi",
-        reviews: 0,
-        installment: "689 925 so'mdan / 24 oy",
-        price: "9 199 000 so'm",
-        image: "https://mini-io-api.texnomart.uz/catalog/product/3591/359192/213257/0c565fae-6c37-44b0-90cb-87f2076ae0da-medium.webp"
-    }
+  {
+    id: 61,
+    name: "LG F2T9GW9P Kir yuvish mashinasi",
+    reviews: 1,
+    installment: "652 425 so'mdan / 24 oy",
+    price: "8 699 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/817/81771/198038/995d5d34-c77f-4d99-9f0b-3e47d504dcd4-medium.webp",
+  },
+  {
+    id: 62,
+    name: "Samsung WW11CB944CGHLD Kir yuvish mashinasi",
+    reviews: 0,
+    installment: "708 263 so'mdan / 24 oy",
+    price: "9 999 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3583/358386/209426/44b65e78-d197-489e-9eb3-1d66525a6a19-medium.webp",
+  },
+  {
+    id: 63,
+    name: "Kir yuvish mashinasi LG F4V3ES6S",
+    reviews: 0,
+    installment: "682 425 so'mdan / 24 oy",
+    price: "9 099 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3570/357042/204878/22c3de73-8413-47e9-a509-775f608152d0-medium.webp",
+  },
+  {
+    id: 64,
+    name: "Haier HW90-B14979 Kir yuvish mashinasi",
+    reviews: 0,
+    installment: "689 925 so'mdan / 24 oy",
+    price: "9 199 000 so'm",
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3591/359192/213257/0c565fae-6c37-44b0-90cb-87f2076ae0da-medium.webp",
+  },
 ];
-
-
 
 export const changyutgichlar = [
   {
@@ -522,7 +545,7 @@ export const changyutgichlar = [
     reviews: 2,
     installment: "86 000 so'mdan / 24 oy",
     price: "1 599 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/915/91536/204338/9587fc81-b232-401a-99de-d9c387b236b5-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/915/91536/204338/9587fc81-b232-401a-99de-d9c387b236b5-medium.webp",
   },
   {
     id: 52,
@@ -530,7 +553,7 @@ export const changyutgichlar = [
     reviews: 0,
     installment: "224 925 so'mdan / 24 oy",
     price: "2 999 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/955/95533/174319/ceb04317-5745-49dc-9780-fefca2de13ab-medium.jpg"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/955/95533/174319/ceb04317-5745-49dc-9780-fefca2de13ab-medium.jpg",
   },
   {
     id: 53,
@@ -538,7 +561,7 @@ export const changyutgichlar = [
     reviews: 0,
     installment: "123 000 so'mdan / 24 oy",
     price: "2 039 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/3582/358212/208328/b63fa46c-4085-4269-92a8-45b2e75fba2b-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3582/358212/208328/b63fa46c-4085-4269-92a8-45b2e75fba2b-medium.webp",
   },
   {
     id: 54,
@@ -546,7 +569,7 @@ export const changyutgichlar = [
     reviews: 0,
     installment: "133 000 so'mdan / 24 oy",
     price: "2 399 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/3568/356858/204191/a942976b-797b-437a-ae7e-11f33f4463d4-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3568/356858/204191/a942976b-797b-437a-ae7e-11f33f4463d4-medium.webp",
   },
   {
     id: 55,
@@ -554,11 +577,9 @@ export const changyutgichlar = [
     reviews: 0,
     installment: "159 000 so'mdan / 24 oy",
     price: "2 699 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/3577/357703/204136/eb6b5fdd-e4da-4827-b93f-0bd643e2ed50-medium.webp"
-  }
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3577/357703/204136/eb6b5fdd-e4da-4827-b93f-0bd643e2ed50-medium.webp",
+  },
 ];
-
-
 
 export const planshetlar = [
   {
@@ -567,7 +588,7 @@ export const planshetlar = [
     reviews: 0,
     installment: "194 200 so'mdan / 24 oy",
     price: "2 913 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/3592/359205/213305/d6fc0834-211e-477f-ae97-8f85612d086b-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3592/359205/213305/d6fc0834-211e-477f-ae97-8f85612d086b-medium.webp",
   },
   {
     id: 57,
@@ -575,7 +596,7 @@ export const planshetlar = [
     reviews: 0,
     installment: "566 596 so'mdan / 24 oy",
     price: "7 999 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/3594/359459/214297/344a5f5e-9254-4191-a227-f73ac055bc52-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3594/359459/214297/344a5f5e-9254-4191-a227-f73ac055bc52-medium.webp",
   },
   {
     id: 58,
@@ -583,7 +604,7 @@ export const planshetlar = [
     reviews: 0,
     installment: "288 225 so'mdan / 24 oy",
     price: "3 843 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/3592/359204/213300/ee5c7ed2-049f-4904-b101-40e0237800fe-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3592/359204/213300/ee5c7ed2-049f-4904-b101-40e0237800fe-medium.webp",
   },
   {
     id: 59,
@@ -591,7 +612,7 @@ export const planshetlar = [
     reviews: 0,
     installment: "381 225 so'mdan / 24 oy",
     price: "5 083 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/3593/359361/213707/16dae58e-0b58-4f14-8b7e-693db6951445-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3593/359361/213707/16dae58e-0b58-4f14-8b7e-693db6951445-medium.webp",
   },
   {
     id: 60,
@@ -599,12 +620,9 @@ export const planshetlar = [
     reviews: 0,
     installment: "160 600 so'mdan / 24 oy",
     price: "2 409 000 so'm",
-    src: "https://mini-io-api.texnomart.uz/catalog/product/3578/357869/205480/2988d895-4c8a-4790-883e-404cb1512276-medium.webp"
-  }
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3578/357869/205480/2988d895-4c8a-4790-883e-404cb1512276-medium.webp",
+  },
 ];
-
-
-
 
 export const konditsionerlar = [
   {
@@ -613,7 +631,7 @@ export const konditsionerlar = [
     price: 9299000,
     reviews: 3,
     installment: 600561,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/805/80569/205129/200ea42a-8f7b-451a-ae4f-a9ed002b4388-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/805/80569/205129/200ea42a-8f7b-451a-ae4f-a9ed002b4388-medium.webp",
   },
   {
     id: 81,
@@ -621,7 +639,7 @@ export const konditsionerlar = [
     price: 9199000,
     reviews: 0,
     installment: 689925,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3586/358625/210625/18435ff4-8075-4257-bc74-5b6ce42a5574-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3586/358625/210625/18435ff4-8075-4257-bc74-5b6ce42a5574-medium.webp",
   },
   {
     id: 82,
@@ -629,7 +647,7 @@ export const konditsionerlar = [
     price: 6499000,
     reviews: 0,
     installment: 487425,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3597/359732/215711/7197099a-0995-4fe0-ad40-8d456b27610d-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3597/359732/215711/7197099a-0995-4fe0-ad40-8d456b27610d-medium.webp",
   },
   {
     id: 83,
@@ -637,12 +655,9 @@ export const konditsionerlar = [
     price: 4999000,
     reviews: 0,
     installment: 322853,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3574/357451/205125/25ec0c0c-6f12-474c-959e-c9d5ed2f7f01-medium.webp"
-  }
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3574/357451/205125/25ec0c0c-6f12-474c-959e-c9d5ed2f7f01-medium.webp",
+  },
 ];
-
-
-
 
 export const muzlatgichlar = [
   {
@@ -651,7 +666,7 @@ export const muzlatgichlar = [
     price: 10055000,
     reviews: 1,
     installment: 754125,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/869/86973/205224/a047a650-a6cf-4db7-a546-aeb760db6963-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/869/86973/205224/a047a650-a6cf-4db7-a546-aeb760db6963-medium.webp",
   },
   {
     id: 76,
@@ -659,7 +674,7 @@ export const muzlatgichlar = [
     price: 12788000,
     reviews: 0,
     installment: 825892,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/1024/102430/205229/48181a05-10e0-44bf-af23-e8c4a9a6eb5b-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/1024/102430/205229/48181a05-10e0-44bf-af23-e8c4a9a6eb5b-medium.webp",
   },
   {
     id: 77,
@@ -667,7 +682,7 @@ export const muzlatgichlar = [
     price: 8310000,
     reviews: 0,
     installment: 588625,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3591/359182/213233/fa8df82d-74bf-409b-b6fa-39894eb77015-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3591/359182/213233/fa8df82d-74bf-409b-b6fa-39894eb77015-medium.webp",
   },
   {
     id: 78,
@@ -675,7 +690,7 @@ export const muzlatgichlar = [
     price: 10710000,
     reviews: 0,
     installment: 691688,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3559/355936/214032/6db239bc-8b77-4400-a2fe-40afed5677a1-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3559/355936/214032/6db239bc-8b77-4400-a2fe-40afed5677a1-medium.webp",
   },
   {
     id: 79,
@@ -683,11 +698,9 @@ export const muzlatgichlar = [
     price: 4448000,
     reviews: 0,
     installment: 287267,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3558/355851/212763/e8d12866-b704-4e42-a448-25491496127f-medium.webp"
-  }
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3558/355851/212763/e8d12866-b704-4e42-a448-25491496127f-medium.webp",
+  },
 ];
-
-
 
 export const qahvaMoshinalari = [
   {
@@ -696,7 +709,7 @@ export const qahvaMoshinalari = [
     price: 14629000,
     reviews: 0,
     installment: 1005744,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3568/356899/196232/ea68957a-5775-42c9-bfea-70f00f35c442-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3568/356899/196232/ea68957a-5775-42c9-bfea-70f00f35c442-medium.webp",
   },
   {
     id: 71,
@@ -704,7 +717,7 @@ export const qahvaMoshinalari = [
     price: 12199000,
     reviews: 0,
     installment: 838682,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3581/358157/208100/57b2f71c-6b53-4394-846f-a6c6e6cbebd1-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3581/358157/208100/57b2f71c-6b53-4394-846f-a6c6e6cbebd1-medium.webp",
   },
   {
     id: 72,
@@ -712,7 +725,7 @@ export const qahvaMoshinalari = [
     price: 14779000,
     reviews: 0,
     installment: 1016057,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3597/359725/215288/c6f3e3d6-bb0d-4c66-a90b-5f29cb6cea65-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3597/359725/215288/c6f3e3d6-bb0d-4c66-a90b-5f29cb6cea65-medium.webp",
   },
   {
     id: 73,
@@ -720,7 +733,7 @@ export const qahvaMoshinalari = [
     price: 7499000,
     reviews: 0,
     installment: 562425,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3585/358512/210003/85e0e0ce-5460-4b51-a6a7-8bfdc24a0374-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3585/358512/210003/85e0e0ce-5460-4b51-a6a7-8bfdc24a0374-medium.webp",
   },
   {
     id: 74,
@@ -728,12 +741,9 @@ export const qahvaMoshinalari = [
     price: 12029000,
     reviews: 0,
     installment: 826994,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/1013/101322/204316/b04f4069-2707-4c04-83fa-4a86855cf703-medium.webp"
-  }
+    src: "https://mini-io-api.texnomart.uz/catalog/product/1013/101322/204316/b04f4069-2707-4c04-83fa-4a86855cf703-medium.webp",
+  },
 ];
-
-
-
 
 export const sochQuritgichlar = [
   {
@@ -742,7 +752,7 @@ export const sochQuritgichlar = [
     price: 2199000,
     reviews: 0,
     installment: 155763,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/804/80456/217373/63b502c8-5789-4d03-8d3d-60d5d2a9a7d6-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/804/80456/217373/63b502c8-5789-4d03-8d3d-60d5d2a9a7d6-medium.webp",
   },
   {
     id: 66,
@@ -750,7 +760,7 @@ export const sochQuritgichlar = [
     price: 1156000,
     reviews: 0,
     installment: 81884,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/804/80479/217377/0d788ccc-45f7-48ca-bc94-286c77b86f17-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/804/80479/217377/0d788ccc-45f7-48ca-bc94-286c77b86f17-medium.webp",
   },
   {
     id: 67,
@@ -758,7 +768,7 @@ export const sochQuritgichlar = [
     price: 389000,
     reviews: 0,
     installment: 27555,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/888/88811/168251/7d26a3b4-9d8a-4e2e-9628-0f1b7ccfa2e6-medium.jpg"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/888/88811/168251/7d26a3b4-9d8a-4e2e-9628-0f1b7ccfa2e6-medium.jpg",
   },
   {
     id: 68,
@@ -766,7 +776,7 @@ export const sochQuritgichlar = [
     price: 499000,
     reviews: 0,
     installment: 35346,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/3593/359395/213833/9c213e73-4be4-4b48-91af-5fe701655f1a-medium.webp"
+    src: "https://mini-io-api.texnomart.uz/catalog/product/3593/359395/213833/9c213e73-4be4-4b48-91af-5fe701655f1a-medium.webp",
   },
   {
     id: 69,
@@ -774,13 +784,20 @@ export const sochQuritgichlar = [
     price: 1415000,
     reviews: 0,
     installment: 100230,
-    image: "https://mini-io-api.texnomart.uz/catalog/product/956/95642/204669/aca13247-ab01-45cb-8c5d-1f075ae56e26-medium.webp"
-  }
+    src: "https://mini-io-api.texnomart.uz/catalog/product/956/95642/204669/aca13247-ab01-45cb-8c5d-1f075ae56e26-medium.webp",
+  },
 ];
 
-
-
-
-
-
-export let allprods = [stocks, sochQuritgichlar, muzlatgichlar, changyutgichlar, konditsionerlar, TVs, phones, planshetlar, qahvaMoshinalari, kirYuvishMashinasi, newProds]
+export let allprods = [
+  stocks,
+  sochQuritgichlar,
+  muzlatgichlar,
+  changyutgichlar,
+  konditsionerlar,
+  TVs,
+  phones,
+  planshetlar,
+  qahvaMoshinalari,
+  kirYuvishMashinasi,
+  newProds,
+];

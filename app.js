@@ -8,6 +8,11 @@ let locationM2 = document.querySelector(".locationM2");
 
 let addedProducts = JSON.parse(localStorage.getItem("products")) || [];
 
+let cartCounter = document.querySelector(".cart__counter")
+
+let count__prods = addedProducts.length
+
+
 locate.onclick = function () {
   citiesList.classList.toggle("display__off");
 };
@@ -143,7 +148,7 @@ function prodList() {
 
     card.innerHTML = `
       <input type="checkbox" checked class="cart__item-check">
-      <img src="./images/card__img${item.id}.webp" width="108" height="108">
+      <img src="${item.src}" width="108" height="108">
       <div>
       <h3>${item.name}</h3>
       <div class="countbox">
@@ -182,6 +187,7 @@ function prodList() {
       } else {
         pusrchaseList.classList.remove("purchase__list2");
       }
+      console.log(count__prods);
     };
     increase.onclick = () => {
       count = count + 1;
@@ -339,7 +345,7 @@ function addPhone() {
     }
 
     box.innerHTML = `
-      <img src="./images/card__img${item.id}.webp" width="220" height="230">
+      <img src="${item.src}" width="220" height="230">
       <div class="card__info">
         <h2 class="card__title">${item.name}</h2>
         <p class="card__rating">${rating}</p>
@@ -367,6 +373,7 @@ function addPhone() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -426,7 +433,7 @@ function addTVs() {
     }
 
     box.innerHTML = `
-      <img src="./images/card__img${item.id}.webp" width="220" height="230">
+      <img src="${item.src}" width="220" height="230">
       <div class="card__info">
         <h2 class="card__title">${item.name}</h2>
         <p class="card__rating">${rating}</p>
@@ -454,6 +461,7 @@ function addTVs() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -513,7 +521,7 @@ function addLaun() {
     }
 
     box.innerHTML = `
-      <img src="${item.image}" width="220" height="230">
+      <img src="${item.src}" width="220" height="230">
       <div class="card__info">
         <h2 class="card__title">${item.name}</h2>
         <p class="card__rating">${rating}</p>
@@ -541,6 +549,7 @@ function addLaun() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -631,6 +640,7 @@ function addTablet() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -717,6 +727,7 @@ function addVacs() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -776,7 +787,7 @@ function addFridges() {
     }
 
     box.innerHTML = `
-      <img src="${item.image}" width="220" height="230">
+      <img src="${item.src}" width="220" height="230">
       <div class="card__info">
         <h2 class="card__title">${item.name}</h2>
         <p class="card__rating">${rating}</p>
@@ -804,6 +815,7 @@ function addFridges() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -863,7 +875,7 @@ function addAir() {
     }
 
     box.innerHTML = `
-      <img src="${item.image}" width="220" height="230">
+      <img src="${item.src}" width="220" height="230">
       <div class="card__info">
         <h2 class="card__title">${item.name}</h2>
         <p class="card__rating">${rating}</p>
@@ -891,6 +903,7 @@ function addAir() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -947,7 +960,7 @@ function addCof() {
     }
 
     box.innerHTML = `
-      <img src="${item.image}" width="220" height="230">
+      <img src="${item.src}" width="220" height="230">
       <div class="card__info">
         <h2 class="card__title">${item.name}</h2>
         <p class="card__rating">${rating}</p>
@@ -975,6 +988,7 @@ function addCof() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -1031,7 +1045,7 @@ function addHair() {
     }
 
     box.innerHTML = `
-      <img src="${item.image}" width="220" height="230">
+      <img src="${item.src}" width="220" height="230">
       <div class="card__info">
         <h2 class="card__title">${item.name}</h2>
         <p class="card__rating">${rating}</p>
@@ -1059,6 +1073,8 @@ function addHair() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
+      count__prods=addedProducts.length
+      console.log(count__prods);
     };
 
     box.classList.add("swiper-slide");
@@ -1157,7 +1173,7 @@ function renderNews() {
       rating += `❤️ ${item.reviews} ta sharq`;
     }
     card.innerHTML = `
-    <img src="./images/card__img${item.id}.webp" alt="" class="card__img">
+    <img src="${item.src}" alt="" class="card__img">
     <div class="card__info">
     <h3 class="card__name">${item.name}</h3>
     <span class="star">${rating}</span>
@@ -1306,7 +1322,7 @@ function renderStocks() {
       rating += `❤️ ${item.reviews} ta sharq`;
     }
     card.innerHTML = `
-    <img src="./images/card__img${item.id}.webp" alt="" class="card__img">
+    <img src="${item.src}" alt="" class="card__img">
     <div class="card__info">
     <h3 class="card__name">${item.name}</h3>
     <span class="star">${rating}</span>
@@ -1432,11 +1448,13 @@ Input__search.oninput = (e)=>{
       let box = document.createElement("div")
 
       box.innerHTML = `
-        
+        <img src="${item.src}" alt="" width="40" height="50">
         <p>${item.name}</p>
       `
       box.classList.add("search__item")
       searchBox.append(box)
+      console.log(box);
+      
 
       
     }
@@ -1448,3 +1466,7 @@ Input__search.oninput = (e)=>{
   }
   
 }
+
+
+
+console.log(count__prods);
