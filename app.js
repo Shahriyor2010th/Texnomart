@@ -8,10 +8,11 @@ let locationM2 = document.querySelector(".locationM2");
 
 let addedProducts = JSON.parse(localStorage.getItem("products")) || [];
 
-let cartCounter = document.querySelector(".cart__counter")
+let cartCounter = document.querySelector(".cart__counter");
 
-let count__prods = addedProducts.length
+let count__prods = addedProducts.length;
 
+cartCounter.textContent = count__prods;
 
 locate.onclick = function () {
   citiesList.classList.toggle("display__off");
@@ -138,7 +139,6 @@ creditPay.onclick = () => {
 };
 
 function prodList() {
-  let checkCount = addedProducts.length;
   addedProducts.forEach((item) => {
     let card = document.createElement("div");
     let count = 0;
@@ -176,6 +176,13 @@ function prodList() {
 
     delet.onclick = () => {
       card.remove();
+      count__prods= addedProducts.length-1;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length == 1) {
+        cartCounter.classList.add("display__off");
+      }
+
       addedProducts = addedProducts.filter((element) => item.id !== element.id);
       localStorage.setItem("products", JSON.stringify(addedProducts));
 
@@ -187,7 +194,6 @@ function prodList() {
       } else {
         pusrchaseList.classList.remove("purchase__list2");
       }
-      console.log(count__prods);
     };
     increase.onclick = () => {
       count = count + 1;
@@ -301,36 +307,35 @@ let cardWrapper = document.querySelector(".card__wrap");
 
 import { phones } from "./datas.js";
 
+let rendTVS = document.querySelector(".TVs");
+let rendPhones = document.querySelector(".smartphones");
+let rendTablet = document.querySelector(".tablets");
+let rendLaun = document.querySelector(".laundry__machines");
+let rendAir = document.querySelector(".air__con");
+let rendFridge = document.querySelector(".fridge");
+let rendVac = document.querySelector(".vacuums");
+let rendLap = document.querySelector(".laptop");
+let rendCoffee = document.querySelector(".coffee__maker");
+let rendHair = document.querySelector(".hair__drier");
 
+let renarr = [
+  rendTVS,
+  rendAir,
+  rendCoffee,
+  rendFridge,
+  rendHair,
+  rendLap,
+  rendLaun,
+  rendPhones,
+  rendTablet,
+  rendVac,
+];
 
-
-
-let rendTVS = document.querySelector(".TVs")
-let rendPhones = document.querySelector(".smartphones")
-let rendTablet = document.querySelector(".tablets")
-let rendLaun = document.querySelector(".laundry__machines")
-let rendAir = document.querySelector(".air__con")
-let rendFridge = document.querySelector(".fridge")
-let rendVac = document.querySelector(".vacuums")
-let rendLap = document.querySelector(".laptop")
-let rendCoffee = document.querySelector(".coffee__maker")
-let rendHair = document.querySelector(".hair__drier")
-
-
-
-
-let renarr = [rendTVS, rendAir, rendCoffee, rendFridge, rendHair, rendLap, rendLaun, rendPhones, rendTablet, rendVac]; 
-
-function nonSelect(){
-  renarr.map((item)=>{
-    item.classList.remove("selected")
-  })
+function nonSelect() {
+  renarr.map((item) => {
+    item.classList.remove("selected");
+  });
 }
-
-
-
-
-
 
 function addPhone() {
   cardWrapper.replaceChildren();
@@ -373,7 +378,12 @@ function addPhone() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      console.log(count__prods);
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -405,18 +415,11 @@ function addPhone() {
 
 addPhone();
 
-rendPhones.onclick = ()=>{
-  nonSelect()
-  rendPhones.classList.add("selected")
-  addPhone()
-}
-
-
-
-
-
-
-
+rendPhones.onclick = () => {
+  nonSelect();
+  rendPhones.classList.add("selected");
+  addPhone();
+};
 
 import { TVs } from "./datas.js";
 
@@ -461,7 +464,12 @@ function addTVs() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      console.log(count__prods);
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -489,22 +497,13 @@ function addTVs() {
       },
     },
   });
-  
 }
 
-
-rendTVS.onclick = ()=>{
-  nonSelect()
-  rendTVS.classList.add("selected")
-  addTVs()
+rendTVS.onclick = () => {
+  nonSelect();
+  rendTVS.classList.add("selected");
+  addTVs();
 };
-
-
-
-
-
-
-
 
 import { kirYuvishMashinasi } from "./datas.js";
 
@@ -549,7 +548,12 @@ function addLaun() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      console.log(count__prods);
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -579,23 +583,11 @@ function addLaun() {
   });
 }
 
-
-rendLaun.onclick = ()=>{
-  nonSelect()
-  rendLaun.classList.add("selected")
-  addLaun()
+rendLaun.onclick = () => {
+  nonSelect();
+  rendLaun.classList.add("selected");
+  addLaun();
 };
-
-
-
-
-
-
-
-
-
-
-
 
 import { planshetlar } from "./datas.js";
 
@@ -640,7 +632,12 @@ function addTablet() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      console.log(count__prods);
+     count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -670,19 +667,11 @@ function addTablet() {
   });
 }
 
-
-rendTablet.onclick = ()=>{
-  nonSelect()
-  rendTablet.classList.add("selected")
-  addTablet()
+rendTablet.onclick = () => {
+  nonSelect();
+  rendTablet.classList.add("selected");
+  addTablet();
 };
-
-
-
-
-
-
-
 
 import { changyutgichlar } from "./datas.js";
 
@@ -727,7 +716,12 @@ function addVacs() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      console.log(count__prods);
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -757,20 +751,11 @@ function addVacs() {
   });
 }
 
-
-rendVac.onclick = ()=>{
-  nonSelect()
-  rendVac.classList.add("selected")
-  addVacs()
+rendVac.onclick = () => {
+  nonSelect();
+  rendVac.classList.add("selected");
+  addVacs();
 };
-
-
-
-
-
-
-
-
 
 import { muzlatgichlar } from "./datas.js";
 
@@ -815,7 +800,12 @@ function addFridges() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      console.log(count__prods);
+     count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -845,20 +835,11 @@ function addFridges() {
   });
 }
 
-
-rendFridge.onclick = ()=>{
-  nonSelect()
-  rendFridge.classList.add("selected")
-  addFridges()
+rendFridge.onclick = () => {
+  nonSelect();
+  rendFridge.classList.add("selected");
+  addFridges();
 };
-
-
-
-
-
-
-
-
 
 import { konditsionerlar } from "./datas.js";
 
@@ -903,7 +884,12 @@ function addAir() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      console.log(count__prods);
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -933,17 +919,11 @@ function addAir() {
   });
 }
 
-
-rendAir.onclick = ()=>{
-  nonSelect()
-  rendAir.classList.add("selected")
-  addAir()
+rendAir.onclick = () => {
+  nonSelect();
+  rendAir.classList.add("selected");
+  addAir();
 };
-
-
-
-
-
 
 import { qahvaMoshinalari } from "./datas.js";
 
@@ -988,7 +968,12 @@ function addCof() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      console.log(count__prods);
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -1018,17 +1003,11 @@ function addCof() {
   });
 }
 
-
-rendCoffee.onclick = ()=>{
-  nonSelect()
-  rendCoffee.classList.add("selected")
-  addCof()
+rendCoffee.onclick = () => {
+  nonSelect();
+  rendCoffee.classList.add("selected");
+  addCof();
 };
-
-
-
-
-
 
 import { sochQuritgichlar } from "./datas.js";
 
@@ -1073,8 +1052,12 @@ function addHair() {
           pusrchaseList.classList.remove("purchase__list2");
         }
       }
-      count__prods=addedProducts.length
-      console.log(count__prods);
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
 
     box.classList.add("swiper-slide");
@@ -1104,37 +1087,17 @@ function addHair() {
   });
 }
 
+rendHair.onclick = () => {
+  nonSelect();
+  rendHair.classList.add("selected");
+  addHair();
+};
 
-rendHair.onclick = ()=>{
-  nonSelect()
-  rendHair.classList.add("selected")
-  addHair()
-}
-
-
-rendLap.onclick = ()=>{
-  cardWrapper.innerHTML=""
-  nonSelect()
-  rendLap.classList.add("selected")
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+rendLap.onclick = () => {
+  cardWrapper.innerHTML = "";
+  nonSelect();
+  rendLap.classList.add("selected");
+};
 
 let chat = document.querySelector(".chat");
 let chatBox = document.querySelector(".chat__box");
@@ -1196,6 +1159,12 @@ function renderNews() {
         pusrchaseList.classList.add("purchase__list2");
       } else {
         pusrchaseList.classList.remove("purchase__list2");
+      }
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
       }
     };
 
@@ -1344,19 +1313,23 @@ function renderStocks() {
       if (!addedProducts.find((item2) => item.id == item2.id)) {
         addedProducts.push(item);
         if (addedProducts.length > 2) {
-        pusrchaseList.classList.add("purchase__list2");
-      } 
-      else {
-        pusrchaseList.classList.remove("purchase__list2");
-      }
+          pusrchaseList.classList.add("purchase__list2");
+        } else {
+          pusrchaseList.classList.remove("purchase__list2");
+        }
         prodList();
         localStorage.setItem("products", JSON.stringify(addedProducts));
-      } 
+      }
+      count__prods= addedProducts.length;
+      cartCounter.textContent = count__prods;
+
+      if (addedProducts.length > 0) {
+        cartCounter.classList.remove("display__off");
+      }
     };
   });
 
   var stockSwiper = new Swiper(".stocks__bottom", {
-    
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -1381,9 +1354,9 @@ function renderStocks() {
 renderStocks();
 
 import { news } from "./datas.js";
-let newsWrapper = document.querySelector(".news__wrapper2")
+let newsWrapper = document.querySelector(".news__wrapper2");
 
-function rendNews(){
+function rendNews() {
   news.forEach((item) => {
     let card = document.createElement("div");
 
@@ -1392,15 +1365,13 @@ function rendNews(){
       <p class="date">${item.description}</p>
       <h4 class="new__title">${item.name}</h4>
     `;
-    
 
     card.classList.add("swiper-slide");
     card.classList.add("news__card");
-    newsWrapper.append(card)
+    newsWrapper.append(card);
   });
 
   var newsSwiper = new Swiper(".news", {
-    
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -1422,51 +1393,37 @@ function rendNews(){
   });
 }
 
-rendNews()
-
-
+rendNews();
 
 import { allprods } from "./datas.js";
 
-let allProds = allprods.flat(Infinity)
-let selectedSearch = document.querySelector(".selected__search")
-let Input__search = document.getElementById("serch")
-let searchBox = document.querySelector(".search__box")
-console.log(allProds);
+let allProds = allprods.flat(Infinity);
+let selectedSearch = document.querySelector(".selected__search");
+let Input__search = document.getElementById("serch");
+let searchBox = document.querySelector(".search__box");
 
 
-Input__search.oninput = (e)=>{
-  searchBox.classList.remove("display__off")
-  searchBox.innerHTML = ""
-  let value = e.target.value
-  let image = ""
+Input__search.oninput = (e) => {
+  searchBox.classList.remove("display__off");
+  searchBox.innerHTML = "";
+  let value = e.target.value;
+  let image = "";
 
-
-
-  allProds.forEach((item)=>{
-    if (item.name.toLowerCase().includes(value.toLowerCase())){
-      let box = document.createElement("div")
+  allProds.forEach((item) => {
+    if (item.name.toLowerCase().includes(value.toLowerCase())) {
+      let box = document.createElement("div");
 
       box.innerHTML = `
         <img src="${item.src}" alt="" width="40" height="50">
         <p>${item.name}</p>
-      `
-      box.classList.add("search__item")
-      searchBox.append(box)
-      console.log(box);
-      
-
-      
+      `;
+      box.classList.add("search__item");
+      searchBox.append(box);
     }
-  })
+  });
 
-  if(value.length == 0){
-    searchBox.innerHTML =""
-    searchBox.classList.add("display__off")
+  if (value.length == 0) {
+    searchBox.innerHTML = "";
+    searchBox.classList.add("display__off");
   }
-  
-}
-
-
-
-console.log(count__prods);
+};

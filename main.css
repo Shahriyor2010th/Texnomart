@@ -597,6 +597,31 @@ header {
   padding: 10px 30px;
 }
 
+
+
+
+
+/* Cart counter */
+
+.header__cart{
+  position: relative;
+}
+
+.cart__counter{
+  background: rgba(255, 180, 19, 0.885);
+  padding: 2px 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+
+
+
+
+
+
 /* Swiper styles */
 
 .swiper {
@@ -1418,7 +1443,7 @@ footer>a{
 .search__box{
   width: 100%;
   height: fit-content;
-  max-height: 200px;
+  max-height: 400px;
   padding: 20px;
   background: #fff;
   position: absolute;
@@ -1442,6 +1467,44 @@ footer>a{
 .search__item:hover{
   background: rgba(255, 174, 0, 0.67);
 }
+
+
+
+
+
+/* add to cart */
+
+#add__cart{
+  padding: 2px;
+}
+
+#add__cart:hover{
+  box-sizing: border-box;
+  background: rgba(255, 174, 0, 0.591);
+  border-radius: 5px;
+}
+#add__cart:active{
+  background: rgba(255, 174, 0, 0.896);
+}
+
+.add__to-cart{
+  padding: 2px;
+}
+
+.add__to-cart:hover{
+  box-sizing: border-box;
+  background: rgba(255, 174, 0, 0.591);
+  border-radius: 5px;
+}
+.add__to-cart:active{
+  background: rgba(255, 174, 0, 0.896);
+}
+
+
+
+
+
+
 
 
 
