@@ -14,6 +14,9 @@ let BottomCounter = document.querySelector(".bottom__cart-coutner")
 let count__prods = addedProducts.length;
 
 
+
+
+
 cartCounter.textContent = count__prods;
 BottomCounter.textContent = count__prods;
 
@@ -185,6 +188,7 @@ function prodList() {
 
       if (addedProducts.length == 1) {
         cartCounter.classList.add("display__off");
+        BottomCounter.classList.add("display__off");
       }
 
       addedProducts = addedProducts.filter((element) => item.id !== element.id);
@@ -1466,3 +1470,13 @@ Input__M1.oninput = (e) => {
     SearchBoxM1.classList.add("display__off");
   }
 };
+
+
+
+
+if (addedProducts.length < 1 ){
+  cartCounter.classList.add("display__off")
+  BottomCounter.classList.add("display__off")
+}
+
+
