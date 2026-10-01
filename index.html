@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Online tech, machines and gadgets shopping site. Here you can find all kinds of gadgets, like TVs, smartphones, fridges, laundry machines, air-conditionings and tablets. Delivery is supported to all places within uzbekistan and installments are available too which means you can buy now and pay step-by-step every month.">
+    <meta name="description"
+        content="Online tech, machines and gadgets shopping site. Here you can find all kinds of gadgets, like TVs, smartphones, fridges, laundry machines, air-conditionings and tablets. Delivery is supported to all places within uzbekistan and installments are available too which means you can buy now and pay step-by-step every month.">
     <title>O'zbekistonda maishiy texnika va elektronika onlayn do'koni | Texnomart</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
@@ -85,7 +86,7 @@
         <div class="bottom__nav">
             <button><i class="fa-regular fa-house"></i>Bosh sahifa</button>
             <button><i class="fa-solid fa-bars"></i>Katalog</button>
-            <button><i class="fa-solid fa-cart-shopping bottom__nav-cart"></i>Savatcha</button>
+            <button class="header__cart-btn"><i class="fa-solid fa-cart-shopping bottom__nav-cart"></i>Savatcha <span class="bottom__cart-coutner"></span></button>
             <button><a href="https://texnomart.uz/naman/wishlist/" class="bottom__heart"><i
                         class="fa-regular fa-heart"></i>Sevimlilar</a></button>
             <button class="header__login-btn"><i class="fa-regular fa-user"></i>Kirish</button>
@@ -238,13 +239,13 @@
                 <button class="header__catalog"><i class="fa-solid fa-bars"></i>Katalog</button>
                 <div class="selected__search">
                     <div class="header__search">
-                        <input type="text" class="search__input" placeholder="Qidirish" id="serch">
+                        <input type="search" class="search__input" placeholder="Qidirish" id="serch">
                         <button>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
                     <div class="search__box display__off">
-                        
+
                     </div>
                 </div>
                 <ul class="header__buttonbox">
@@ -253,15 +254,19 @@
                     <li><button><a href="https://texnomart.uz/naman/wishlist/"><i
                                     class="fa-regular fa-heart"></i>Sevimlilar</a></button>
                     </li>
-                    <li><button class="header__cart"><i class="fa-solid fa-cart-shopping"></i>Savatcha <span class="cart__counter"></span></button></li>
+                    <li><button class="header__cart"><i class="fa-solid fa-cart-shopping"></i>Savatcha <span
+                                class="cart__counter"></span></button></li>
                 </ul>
             </div>
             <div class="header__bottomM1">
                 <div class="header__search">
-                    <input type="text" class="search__input" placeholder="Qidirish">
-                    <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    <div class="header__searchboxM1">
+                        <input type="search" class="search__input search__inputM1" placeholder="Qidirish">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="search__listM1 display__off"></div>
                 </div>
                 <button>
                     <i class="fa-solid fa-bars"></i>

@@ -9,10 +9,13 @@ let locationM2 = document.querySelector(".locationM2");
 let addedProducts = JSON.parse(localStorage.getItem("products")) || [];
 
 let cartCounter = document.querySelector(".cart__counter");
+let BottomCounter = document.querySelector(".bottom__cart-coutner")
 
 let count__prods = addedProducts.length;
 
+
 cartCounter.textContent = count__prods;
+BottomCounter.textContent = count__prods;
 
 locate.onclick = function () {
   citiesList.classList.toggle("display__off");
@@ -178,6 +181,7 @@ function prodList() {
       card.remove();
       count__prods= addedProducts.length-1;
       cartCounter.textContent = count__prods;
+      BottomCounter.textContent = count__prods;
 
       if (addedProducts.length == 1) {
         cartCounter.classList.add("display__off");
@@ -380,6 +384,7 @@ function addPhone() {
       }
       count__prods= addedProducts.length;
       cartCounter.textContent = count__prods;
+      BottomCounter.textContent = count__prods;
 
       if (addedProducts.length > 0) {
         cartCounter.classList.remove("display__off");
@@ -1401,9 +1406,14 @@ let allProds = allprods.flat(Infinity);
 let selectedSearch = document.querySelector(".selected__search");
 let Input__search = document.getElementById("serch");
 let searchBox = document.querySelector(".search__box");
+let Input__M1 = document.querySelector(".search__inputM1");
+let SearchBoxM1 = document.querySelector(".search__listM1")
+
+
 
 
 Input__search.oninput = (e) => {
+
   searchBox.classList.remove("display__off");
   searchBox.innerHTML = "";
   let value = e.target.value;
@@ -1425,5 +1435,34 @@ Input__search.oninput = (e) => {
   if (value.length == 0) {
     searchBox.innerHTML = "";
     searchBox.classList.add("display__off");
+  }
+};
+
+
+
+Input__M1.oninput = (e) => {
+  
+  SearchBoxM1.classList.remove("display__off");
+  SearchBoxM1.innerHTML = "";
+  let value = e.target.value;
+  let image = "";
+
+  
+  allProds.forEach((item) => {
+    if (item.name.toLowerCase().includes(value.toLowerCase())) {
+      let box = document.createElement("div");
+      
+      box.innerHTML = `
+        <img src="${item.src}" alt="" width="40" height="50">
+        <p>${item.name}</p>
+      `;
+      box.classList.add("search__item");
+      SearchBoxM1.append(box);
+    }
+  });
+
+  if (value.length == 0) {
+    SearchBoxM1.innerHTML = "";
+    SearchBoxM1.classList.add("display__off");
   }
 };
